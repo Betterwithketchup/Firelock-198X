@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4337-9d7c-4f62-0ba0" name="Forces of the Ebon Forest" gameSystemId="sys-4128-3f2b-faf6-af85" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Company Chief" hidden="false" id="f41a-c542-8a4d-3cc9" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="8f59-bedc-c093-7169" id="02ed-a7bc-f1e9-7a95" primary="true" name="TACOM"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Waykeeper Judge" hidden="false" id="524d-f0fb-b93e-c08f" defaultAmount="1">
+      <costs>
+        <cost name="New Cost Type" typeId="06e3-db66-289c-8c3d" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="8f59-bedc-c093-7169" id="7abe-24be-9e55-2c12" primary="true" name="TACOM"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <costTypes>
+    <costType name="Points" id="06e3-db66-289c-8c3d" defaultCostLimit="-1" hidden="false"/>
+  </costTypes>
+  <categoryEntries>
+    <categoryEntry name="TACOM" id="8f59-bedc-c093-7169" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="df81-c9c2-5e8a-dcbc" includeChildSelections="false"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Ebon Forest" id="d843-4869-8656-cec3" hidden="false"/>
+  </forceEntries>
+</catalogue>
