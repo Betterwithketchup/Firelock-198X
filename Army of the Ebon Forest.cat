@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Waykeeper Judge" hidden="false" id="4111-78c5-969a-92c7">
+      <categoryLinks>
+        <categoryLink name="TACOM" hidden="false" id="1261-5842-f224-5e3b" targetId="default-category" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="29f2-eafb-ee06-ec9c" targetId="1348-366f-efec-ce89" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+      <profiles>
+        <profile name="Waykeeper Judge" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="14de-b7d7-e18c-215e">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">5</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="No Berserk" id="7c86-d307-4e4e-1919" hidden="false">
+          <description>While this unit is alive, no unit in this army ca willingly go berserk.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="7810-3703-56f7-e7f6" hidden="false" type="profile" targetId="fb71-8565-2ff6-d9f1">
+          <modifiers>
+            <modifier type="set" value="3+/4+" field="d665-cce3-dfb4-664b"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Company Chief" hidden="false" id="2366-f461-f854-98ff">
+      <profiles>
+        <profile name="Company Chief" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="8d88-012f-9ff9-2495">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mle. 38 .30 LMG" id="e996-ce12-fa76-9244" hidden="false" type="profile" targetId="7da8-02ab-def4-c3e7"/>
+        <infoLink name="Mle. 44 3.5-inch RPG" id="4e09-167a-6193-cc5a" hidden="false" type="profile" targetId="51ad-9ace-dab9-6570"/>
+        <infoLink name="OtPv. 9 30-inch Machete" id="055c-f938-cd3c-b0d0" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
+        <infoLink name="Bloodlust" id="4d25-9a25-aabe-11cb" hidden="false" type="rule" targetId="Bloodlust"/>
+        <infoLink name="Melee" id="fce7-3fc9-12af-6d84" hidden="false" type="rule" targetId="Melee"/>
+        <infoLink name="Small Arm" id="6a91-ec3e-417d-5ba2" hidden="false" type="rule" targetId="Small Arm"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="bd99-a877-2702-9317" primary="true" name="TACOM"/>
+        <categoryLink targetId="1348-366f-efec-ce89" id="d3e9-4666-11b7-15df" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Territorials" hidden="false" id="5c21-318a-1a0a-3cfc">
+      <infoLinks>
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="315f-67dd-b800-ba1c" hidden="false" type="profile" targetId="fb71-8565-2ff6-d9f1"/>
+        <infoLink name="OtPv. 9 30-inch Machete" id="121a-964d-18d5-ebb8" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
+        <infoLink name="OtPv. 9 30-inch Machete" id="7e0a-99da-1fe8-0b60" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
+        <infoLink name="Infiltrator" id="4cc9-e07d-1eda-7aa8" hidden="false" type="rule" targetId="Infiltrator"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Territorials" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="aca1-a983-ad04-c822">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="99a9-1c05-65a9-c742" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chasseurs" hidden="false" id="caaa-7da5-245b-d55a">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="671a-9d26-b7de-3273" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chasseurs" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="3458-360b-2259-e630">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mle. 38 .30 LMG" id="e2dd-0944-aec2-b934" hidden="false" type="profile" targetId="7da8-02ab-def4-c3e7"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="9da4-041e-3daa-b9e9" hidden="false" collapsible="true" defaultSelectionEntryId="none">
+          <infoLinks>
+            <infoLink name="Infiltrator" id="9483-8842-6657-ca2e" hidden="false" type="rule" targetId="Infiltrator"/>
+          </infoLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="CdS-F1 &quot;Kennel&quot;" hidden="false" id="e4b4-6727-ab3c-a83a">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="9673-aaa8-fcaa-af6e" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Mtl. 19 .50 HMG" id="71a8-7c97-0224-0ba1" hidden="false" type="profile" targetId="1340-ad95-3a45-c987"/>
+        <infoLink name="Resupply" id="da2a-10f4-bbf6-9643" hidden="false" type="profile" targetId="Resupply"/>
+      </infoLinks>
+      <profiles>
+        <profile name="CdS-F1 &quot;Kennel&quot;" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="821c-bbda-9ee1-a642">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/2/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Mle. 38 .30 LMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7da8-02ab-def4-c3e7">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">10&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="OtPv. 9 30-inch Machete" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="b9f8-e60c-abd5-fc04">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mle. 32 .30 Self-loading Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="fb71-8565-2ff6-d9f1">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mle. 44 3.5-inch RPG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="51ad-9ace-dab9-6570">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Shaped Charge, Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mtl. 19 .50 HMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="1340-ad95-3a45-c987">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Turret</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedRules>
+    <rule name="Bloodlust" id="Bloodlust" hidden="false">
+      <description>A wolf in uniform is still a wolf. The smell of blood drives undisciplined troops into a killing frenzy. 
+
+
+If this infantry unit reaches six pin tokens during the Fire Phase, the unit must roll a 4+ check on a D6 to avoid going berserk. Place a berserk token on the unit if it fails. When a unit gains a berserk token, all other Lupar infantry with the Bloodlust trait within 3” also roll to go berserk. This chain re-action will continue until all infantry succeed their checks or there are no more units with Bloodlust within range. Units do not roll to go berserk more than once per round, and they may choose to willingly go berserk. Immediately remove all pin tokens from units that go berserk. Berserk units cannot gain pin tokens and can re-roll all attack rolls made in close combat. However, they do not benefit from cover and must always fire at moving accuracy (even in close combat). During the Maneuver Phase, berserk units must sprint toward the nearest corpse or living enemy unit that they can possibly kill, whichever is closer (unless they have a stationary fire token). These obligatory move actions do not cost command tokens, and occur automatically at the beginning of the phase before normal move actions are declared by anyone. A unit remains berserk until it is targeted by a Rally weapon or it gorges on a corpse token. Units with Bloodlust may choose to gorge on a corpse even if not currently berserk. Gorging automatically occurs when a unit with Bloodlust enters full basal contact with a corpse token. This unit spends the rest of the phase tearing chunks off of the corpses. In the beginning of the subsequent Support Phase, before any other actions occur, remove the corpse token. Flip the unit’s berserk token to show that it is satiated. This unit will not roll berserk checks for the rest of the battle. Multiple units may gorge on the same corpse token if they are in simultaneous contact with it at the beginning of the Support Phase. Berserk units may not call or participate in brigade movement. Embarked units do not roll to go berserk.</description>
+    </rule>
+    <rule name="Infiltrator" id="Infiltrator" hidden="false">
+      <description>*Whether warden or poacher, the lupar are natural hunters—the wilder, the better.*
+
+
+This unit may deploy up to 16” inches away from deployment edge into occluding terrain (or terrain that puts infantry into ambush, such as dead ground or entrenchment) before standard deployment. Multiple players with Infiltrators must alternate their deployments.</description>
+    </rule>
+  </sharedRules>
+</catalogue>
