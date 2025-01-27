@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d"/>
     <categoryEntry name="Infantry" id="1348-366f-efec-ce89" hidden="false"/>
     <categoryEntry name="Vehicle" id="f8a8-fe3f-6c49-17b0" hidden="false"/>
     <categoryEntry name="Aircraft" id="4ac2-0060-160c-d506" hidden="false"/>
     <categoryEntry name="Lupar" id="dce2-0c88-f9f4-a415" hidden="false"/>
+    <categoryEntry name="Watercraft" id="67f2-d344-cbe3-ac27" hidden="false"/>
+    <categoryEntry name="Helicopter" id="4337-935c-91cb-9180" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Army Roster" hidden="false" id="default-force">
       <categoryLinks>
-        <categoryLink name="TACOM" hidden="false" id="82e6-4f2a-8aa4-487d" targetId="c2a0-f677-9d01-266d" type="category">
+        <categoryLink name="TACOM" hidden="false" id="82e6-4f2a-8aa4-487d" targetId="c2a0-f677-9d01-266d">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="af42-9a24-2e67-eb71" includeChildSelections="true" percentValue="false"/>
           </constraints>
@@ -18,6 +20,8 @@
         <categoryLink name="Infantry" hidden="false" id="42e2-cb02-9e2e-efb0" targetId="1348-366f-efec-ce89"/>
         <categoryLink name="Vehicle" hidden="false" id="29f3-a517-e2c6-99e8" targetId="f8a8-fe3f-6c49-17b0"/>
         <categoryLink name="Aircraft" hidden="false" id="1460-3627-5179-6b76" targetId="4ac2-0060-160c-d506"/>
+        <categoryLink name="Watercraft" hidden="false" id="bc85-1419-9614-50ec" targetId="67f2-d344-cbe3-ac27" type="category"/>
+        <categoryLink name="Helicopter" hidden="false" id="7091-3917-d39c-d475" targetId="4337-935c-91cb-9180" type="category"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -53,6 +57,14 @@
         <characteristicType name="Description" id="4330-1c07-3cee-f7ed"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Unit (Aircraft)" id="bc88-9949-5b2a-9493" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Type" id="9265-2ade-09bd-09d9"/>
+        <characteristicType name="M" id="e85a-c562-a781-84ab"/>
+        <characteristicType name="Q" id="0103-c752-ce78-b142"/>
+        <characteristicType name="T" id="7ba2-0bd2-bda2-c5fa"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
     <rule name="Small Arm" id="Small Arm" hidden="false">
@@ -83,8 +95,7 @@ Heavy Indirect weapons do identify and spot the firer, cannot fire if concealed,
 a fire action. For every unit of Ammo supplied to another unit, this unit’s Resupply value decreases by one. Resupplying Ammo is equivalent to firing a weapon at stationary Accuracy, i.e. the Resupply unit cannot resupply another unit and then move in the Maneuver Phase. Resupply units cannot resupply themselves. Cannot target airborne units. Does not cause the resupplying unit to identify itself.</description>
     </rule>
     <rule name="Personnel Carrier" id="Personnel Carrier" hidden="false">
-      <description>This unit is a personnel carrier, capable of carrying up to X infantry units inside itself 
-in addition to external desants. Infantry must disembark from the vehicle from the listed arc. Friendly vehicles do not block disembarkation. Infantry may not use their weapons 
+      <description>This unit is a personnel carrier, capable of carrying up to X infantry units inside itself in addition to external desants. Infantry must disembark from the vehicle from the listed arc. Friendly vehicles do not block disembarkation. Infantry may not use their weapons
 while embarked except for Small Arms, which may be fired at stationary accuracy. A PC that is carrying infantry may use its own weapons as normal. This doesn&apos;t keep the carrier from moving later. Embarked infantry can fight in close combat, but cannot screen their carrier. Aircraft must land to embark or disembark, and may not carry desanting infantry. Embarked units cannot be targeted or hit directly by attacks on the carrier, and do not inherit the carrier’s pin. When a carrier dies, teams are killed and squads are depleted; any infantry in an airborne carrier are killed.</description>
     </rule>
     <rule name="Turret" id="Turret" hidden="false">
@@ -132,5 +143,112 @@ Aircraft may hitch and unhitch tows while airborne, and cannot land while hitch
 Support missions can target designated units which aren’t in LOS of the calling TACOM.
 Designators fired at the same time as other weapons immediately spot for them</description>
     </rule>
+    <rule name="Watercraft" id="Watercraft" hidden="false">
+      <description>This vehicle is designed to move on water. It can only move on water (shallow or deep), doing so at no movement penalty. Deep water offers a 2x movement modifier. Watercraft can’t be towed by land units, only by other Watercraft or by aircraft.</description>
+    </rule>
+    <rule name="Chaff-Flares" id="Chaff-Flares" hidden="false">
+      <description>This unit is fitted with IR flares and anti-missile chaff. Once per game, Chaff-Flares forces all dice from a single attack which hit the aircraft to re-roll. Chaff-Flares cannot be reloaded and have no effect on fire actions after the one they triggered against. If triggered during a dogfight, they only last for one close combat round. They are unusable when landed.</description>
+    </rule>
+    <rule name="Loiter" id="Loiter" hidden="false">
+      <description>This plane may remain strafing over its target without overshooting it, but it must still exit the board at the end of the Fire Phase.</description>
+    </rule>
+    <rule name="Nimble" id="Nimble" hidden="false">
+      <description>This plane may return to your hand instead of moving during your turn and fall back from dogfights. When it does either, it gains six pin tokens. All non-Homing time-in flight attacks fired at or by this plane then miss.</description>
+    </rule>
+    <rule name="Paradrop" id="Paradrop" hidden="false">
+      <description>Units with the Paradrop special rule may deploy by parachuting onto the table in alternating turns after all other blinds deploy. Parachuting blinds can deploy anywhere on the board so long as the unit is not spotted by an enemy or within 8” of an enemy unit, enemy deployment zone or board edge, or objective. They do not get a deployment move. Parachuting vehicles cannot deploy with units towed, embarked, or desanting. 
+Parachuting units gain two pin tokens per each enemy unit with an Air or All-targeting weapon (that can kill it) within half range. These aren&apos;t lost in the first Support Phase.</description>
+    </rule>
+    <rule name="Air-Filling" id="Air-Filling" hidden="false">
+      <description>This weapon blankets the air in shrapnel. Misses apply three pin tokens rather than one, unless the weapon cannot possibly kill its target. (For weapons with variable Strength, roll Strength even if the attack missed.)</description>
+    </rule>
+    <rule name="Barrage" id="Barrage" hidden="false">
+      <description>This weapon may simultaneously fire up to X times in one fire action. Each attack consumes one Ammo and may use a different shot type. Declare the number of attacks before resolving. Targets can be spaced 2” from each other unless the weapon is Barrage (X, Point).
+Barrage attacks called in fire missions can be spaced 2” away from the mission target.</description>
+    </rule>
+    <rule name="Discreet" id="Discreet" hidden="false">
+      <description>This weapon does not identify the firer or cause the firer to lose concealment when fired. You don’t have to indicate who fired it.</description>
+    </rule>
+    <rule name="Chemical Weapon" id="Chemical Weapon" hidden="false">
+      <description>All Chemical Weapons have a Radius of X inches and are Lingering. Within this radius, all ground units cannot lose pin tokens by any means, cannot call or participate in a brigade move, and cannot call or participate in support missions. Airborne units are totally unaffected.
+The Lingering kill roll is 6+. It applies no pin, ignores cover, and is ignored by NBC units.</description>
+    </rule>
+    <rule name="Defensive CC" id="Defensive CC" hidden="false">
+      <alias>Defensive CC (Inf.)</alias>
+      <description>This weapon may not be used in close combat at all, or versus infantry (respectively) if its unit charged.</description>
+    </rule>
+    <rule name="Door Gun" id="Door Gun" hidden="false">
+      <description>This helicopter weapon may only fire in the listed arcs, and may fire while landed.</description>
+    </rule>
+    <rule name="Guided Missile" id="Guided Missile" hidden="false">
+      <description>This weapon is a guided missile. It does not get a half range Accuracy modifier. Air-targeting Guided Missiles count as having Tracking.
+A Guided Missile has a time-in-flight equal to X. If the weapon is fired within half range, its time-in-flight is reduced by 1. If time-in-flight is reduced to 0, that attack is resolved immediately. Guided Missiles use their accuracy at the time their attack lands, not when it was fired. If the firer is killed, the attack misses.</description>
+    </rule>
+    <rule name="Homing" id="Homing" hidden="false">
+      <description>This missile has a fire and forget seeker. It ignores any to-hit modifiers applied during flight and always rolls to hit, even if its firer was killed or spotting was lost.</description>
+    </rule>
+    <rule name="Ignores Cover" id="Ignores Cover" hidden="false">
+      <description>This weapon ignores up to X points of the target’s Cover Modifier.</description>
+    </rule>
+    <rule name="Lingering" id="Lingering" hidden="false">
+      <description>This Radius weapon’s effects persist on the table after it has landed. Units inside of a Lingering weapon are hit according to the weapon’s Accuracy statistic when it lands, then hit again automatically if they are inside of the weapon’s Radius during subsequent Upkeeps. Multiple Lingering kill rolls do not stack.  
+After all Lingering weapons have rolled to kill during Upkeep (if they have Strength values), roll once per radius to see if it dissipates. On a roll of 4+, the weapon cloud persists until the next Support Phase.</description>
+    </rule>
+    <rule name="MCLOS" id="MCLOS" hidden="false">
+      <description>(Manual Command, Line of Sight)
+This guided missile demands concentration to steer. For each pin token on the firer (not each two), this weapon suffers -1 to hit.</description>
+    </rule>
+    <rule name="Multi-Gun" id="Multi-Gun" hidden="false">
+      <description>This weapon may be used simultaneously with another weapon in the Fire Phase. They may be used against different targets.</description>
+    </rule>
+    <rule name="No CC" id="No CC" hidden="false">
+      <alias>No CC (Inf.)</alias>
+      <description>This weapon may not be used in close combat at all or versus infantry (respectively).</description>
+    </rule>
+    <rule name="Radar Anti-Air" id="Radar Anti-Air" hidden="false">
+      <description>This weapon’s fire is guided by a mounted air search radar. It blind-fires at aircraft at 4+ (or base accuracy, if it&apos;s lower) rather than 6+, even if there is intervening Smoke.</description>
+    </rule>
+    <rule name="Rear Attack" id="Rear Attack" hidden="false">
+      <description>This weapon strikes either the top or rear of a target (i.e., its thinnest armor). Attacks automatically hit the target’s rear arc, regardless of the shooter and target&apos;s positions.</description>
+    </rule>
+    <rule name="Saturating" id="Saturating" hidden="false">
+      <description>This weapon can spend up to X amount of Ammo in a single attack. The attack gains Radius with a number of inches equal to the Ammo spent to fire it.
+If only one Ammo is spent, the weapon’s targeting type is Inf/Vec (not Gnd) and it does not get Radius.</description>
+    </rule>
+    <rule name="Scoped" id="Scoped" hidden="false">
+      <description>This weapon is equipped with a magnified scope: even if a target is too far away to spot and identify, it&apos;s easier to shoot at. It blindfires at 4+ (or base accuracy, if it&apos;s lower) unless there is Smoke between shooter and target.
+Additionally, this weapon gains Ignore Cover (1) when targeting infantry.</description>
+    </rule>
+    <rule name="Smoke" id="Smoke" hidden="false">
+      <description>All Smoke weapons have a Radius of X inches and are Lingering. LOS may be drawn through Smoke, but not spotting. Fire through Smoke is thus always blind-fire, unless the unit is otherwise spotted, such as by Thermal Sights. A unit which has the center of its base within a Smoke radius is considered to be firing and fired at through Smoke. Smoke blocks Designators.
+Firing through smoke at an otherwise spotted unit incurs a -1 Accuracy modifier. A result of 6 will always hit anyways, unless the roll is also modified by pin tokens.
+Smoke fired at the same time as other weapons does not block spotting until after the fire action has concluded.
+As airborne units fly above the Smoke, they can spot units on the other side of Smoke radius. Ground units directly inside of a Smoke radius, however, benefit from Smoke’s obscuring effects as normal.
+Smoke weapons can be fired even if the firer is at max pin. A Smoke weapon with a Strength value only hits units when it lands, not during Upkeep.</description>
+    </rule>
+    <rule name="Tracking" id="Tracking" hidden="false">
+      <alias>Tracking (Flak)</alias>
+      <description>This weapon has a sophisticated high angle mount. It may target planes at full range, and helicopters within 12”, without blind-firing.
+If designated Tracking (Flak), it must blind-fire at helicopters within 12’’, and cannot target planes within 12’’, but may fire at both normally beyond that distance.</description>
+    </rule>
+    <rule name="Strafing" id="Strafing" hidden="false">
+      <description>If this weapon is fired at moving Accuracy, the helicopter that fired it must immediately move itself forward 12” without rotating.</description>
+    </rule>
+    <rule name="Thermal Sights" id="Thermal Sights" hidden="false">
+      <description>This weapon’s optics enable it to spot and fire on units through Smoke for the duration of its own attack, but the attack still suffers the normal -1 Accuracy penalty accrued from firing through Smoke at a spotted unit.
+Thermal Sights does not allow spotting on a unit in Smoke for any reason other than a fire action by a unit using this weapon, i.e. it may not spot through Smoke for the fire mission of a friendly Indirect weapon.</description>
+    </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile name="Smoke Launchers" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Smoke Launchers">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Light Indirect, No CC, Smoke (4&quot;)</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>

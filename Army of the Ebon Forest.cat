@@ -66,8 +66,8 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Mle. 38 .30 LMG" id="e996-ce12-fa76-9244" hidden="false" type="profile" targetId="7da8-02ab-def4-c3e7"/>
-        <infoLink name="Mle. 44 3.5-inch RPG" id="4e09-167a-6193-cc5a" hidden="false" type="profile" targetId="51ad-9ace-dab9-6570"/>
+        <infoLink name="Mle. 38 .30 LMG" id="e996-ce12-fa76-9244" hidden="false" type="profile" targetId="Mle. 38 .30 LMG"/>
+        <infoLink name="Mle. 44 3.5-inch RPG" id="4e09-167a-6193-cc5a" hidden="false" type="profile" targetId="Mle. 44 3.5-inch RPG"/>
         <infoLink name="OtPv. 9 30-inch Machete" id="055c-f938-cd3c-b0d0" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
         <infoLink name="Bloodlust" id="4d25-9a25-aabe-11cb" hidden="false" type="rule" targetId="Bloodlust"/>
         <infoLink name="Stimulant-Laced Bomb, “Signal Salt”" id="ddba-11b5-4b28-6021" hidden="false" type="profile" targetId="e1ba-fb83-4462-33f6"/>
@@ -143,7 +143,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Mle. 38 .30 LMG" id="e2dd-0944-aec2-b934" hidden="false" type="profile" targetId="7da8-02ab-def4-c3e7"/>
+        <infoLink name="Mle. 38 .30 LMG" id="e2dd-0944-aec2-b934" hidden="false" type="profile" targetId="Mle. 38 .30 LMG"/>
         <infoLink name="Infiltrator" id="a1f7-63e0-1f76-88b9" hidden="false" type="rule" targetId="Infiltrator"/>
         <infoLink name="Bloodlust" id="c656-0999-6471-f940" hidden="false" type="rule" targetId="Bloodlust"/>
         <infoLink name="Sense" id="6a40-2304-d10a-cc89" hidden="false" type="rule" targetId="Sense">
@@ -152,7 +152,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="OtPv. 9 30-inch Machete" id="fc36-060a-9a1b-8727" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
-        <infoLink name="Mle. 44 3.5-inch RPG" id="6214-96b7-beb4-637c" hidden="false" type="profile" targetId="51ad-9ace-dab9-6570"/>
+        <infoLink name="Mle. 44 3.5-inch RPG" id="6214-96b7-beb4-637c" hidden="false" type="profile" targetId="Mle. 44 3.5-inch RPG"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="CdS-F1 &quot;Kennel&quot;" hidden="false" id="e4b4-6727-ab3c-a83a" collapsible="false">
@@ -238,7 +238,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Elite" id="8749-daf1-34e2-fa4d" hidden="false" type="rule" targetId="Elite"/>
-        <infoLink name="Mle. 7 Laser Designator" id="84f7-3309-21bf-cdd8" hidden="false" type="profile" targetId="0fb7-b1b7-57dd-cfaf">
+        <infoLink name="Mle. 7 Laser Designator" id="84f7-3309-21bf-cdd8" hidden="false" type="profile" targetId="Mle. 7 Laser Designator">
           <modifiers>
             <modifier type="append" value="Discreet" field="6179-e464-2408-8ef1" join=", "/>
           </modifiers>
@@ -480,7 +480,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Mle. 32 .30 Self-loading Rifle" id="2c40-0338-46b7-4528" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle"/>
-        <infoLink name="TAP 20 3-inch Recoilless Rifle - HEAT" id="3ac6-6ac3-ded5-4b87" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle"/>
+        <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - HEAT" id="3ac6-6ac3-ded5-4b87" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle"/>
         <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - Canister" id="b8b6-08bd-e5bd-1df0" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle - Canister"/>
         <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - Smoke" id="4a76-be17-67d3-8d3f" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle - Smoke"/>
       </infoLinks>
@@ -684,9 +684,931 @@
         <infoLink name="Amphibious" id="eab9-760d-cd9d-1622" hidden="false" type="rule" targetId="Amphibious"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VBD-U “Denmother”" hidden="false" id="1873-4f7e-f295-a571">
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="b36c-1432-aa2b-8af5" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="1809-e2d3-8dd8-1874" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Universal Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="0527-292b-36b4-0e46">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">3/2/1+</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Personnel Carrier" id="5369-ccd1-9552-b6b8" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(1, All)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Denmother" id="d243-c209-2fa4-17a3" hidden="false" noindex="true">
+          <description>This unit uses a 40x40mm base. Infantry cannot desant. Embarked infantry may fire all weapons as if they were Small Arms and are identified along with the vehicle.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VBD-1 “Tanner”" hidden="false" id="dab3-fbc3-41db-2a12">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="cd48-0a80-d747-5476" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="a09d-7e4f-1917-e626" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Armored Personnel Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="c9a1-1ce1-522c-8955">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mtl. 19 .50 HMG" id="aebf-1ca6-6d47-281a" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifiers>
+            <modifier type="set" value="Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Amphibious" id="4ef0-8410-382b-fe08" hidden="false" type="rule" targetId="Amphibious"/>
+        <infoLink name="NBC" id="3490-33a8-6710-e043" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Personnel Carrier" id="f1dd-7593-a002-4dc3" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(3, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VBD-2 “Rawhide”" hidden="false" id="c626-62bd-522e-65e4">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="3bf9-473c-e689-1f19" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Lupar" hidden="false" id="01f2-a50a-80f7-af05" targetId="dce2-0c88-f9f4-a415" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infantry Fighting Vehicle" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="b39d-a4df-5f01-4fc1">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">5/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mtl. 19 .50 HMG" id="dfaa-2b59-7d02-1bb1" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifiers>
+            <modifier type="set" value="Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="40dc-7ee5-d9d6-b9f3" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Personnel Carrier" id="2a12-2d4b-971f-2103" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="APX-30 1-inch Autocannon" id="be86-0ace-d926-aaef" hidden="false" type="profile" targetId="APX-30 1-inch Autocannon"/>
+        <infoLink name="Smoke Launchers" id="a4de-93fc-bf5c-49ac" hidden="false" type="profile" targetId="Smoke Launchers"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VBD-3 “Motte”" hidden="false" id="aeb7-5dd1-4630-c301">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="f6be-a687-891a-45e0" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Lupar" hidden="false" id="8510-0346-39d3-cb96" targetId="dce2-0c88-f9f4-a415" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Armored Personnel Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ff35-acb9-fcef-ac39">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">16/10/6</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mtl. 19 .50 HMG" id="c2ad-4118-74f5-8390" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifiers>
+            <modifier type="set" value="Multi-Gun" field="6179-e464-2408-8ef1"/>
+            <modifier type="set" value="2/3" field="3c88-8ccc-7c7c-d717"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="8027-d1ac-e951-4117" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Personnel Carrier" id="2a06-0e40-abec-8063" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Rear, Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Smoke Launchers" id="82d1-533b-f1f7-c887" hidden="false" type="profile" targetId="Smoke Launchers"/>
+        <infoLink name="Mle. 38C .30 MG" id="ffb7-3306-9bad-adb3" hidden="false" type="profile" targetId="Mle. 38C .30 MG">
+          <modifiers>
+            <modifier type="append" value="Swivels" field="name" join=", "/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Char 30 &quot;Veldjen&quot;" hidden="false" id="66a0-ef59-9346-aaa2">
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="076c-d1ac-a4ba-1af7" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="a924-acd8-69c8-8340" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <profiles>
+        <profile name="Medium Tank" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="a85c-ec4f-71f1-79ad">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">10/6/5</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ SA19 3-inch Gun - APHE" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="2115-22d3-5b9e-de59">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/12</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, No CC (Inf.), Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ SA19 3-inch Gun - HE-Frag" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="186d-e2c0-4c2f-743e">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, No CC (Inf.), Turret, Ignore Cover (1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="LF4 Sponson Flamethrower" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7c18-92c3-2487-2545">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Ignore Cover (2), Multi-Gun, Rear Attack</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="eb22-ab53-1546-e3b9" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Mle. 38C .30 MG" id="7128-53da-ee7a-6ce1" hidden="false" type="profile" targetId="Mle. 38C .30 MG">
+          <modifiers>
+            <modifier type="set" value="4+/6+" field="d665-cce3-dfb4-664b"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Char 38 &quot;Borvo&quot;" hidden="false" id="42c5-4d1f-b3e4-a8b7">
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="2412-92c8-70d7-78fb" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Lupar" hidden="false" id="8938-881e-c2fc-7ef8" targetId="dce2-0c88-f9f4-a415" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="40"/>
+      </costs>
+      <profiles>
+        <profile name="Main Battle Tank" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="4ecc-0253-0704-86ec">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">14/8/6</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ SA19B 3-inch Dual Guns - APHE" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="502d-f830-de63-c301">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/12</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2, Point), Thermal Sights, Turret, No CC (Inf.)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ SA19B 3-inch Dual Guns - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="222f-789b-2db1-7c17">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2, Point), Thermal Sights, Turret, No CC (Inf.), Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ SA19B 3-inch Dual Guns - Canister" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="d114-2af1-6416-22bd">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2, Point), Thermal Sights, Turret, Defensive CC (Inf.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="5922-8f50-02f7-fe61" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Mle. 38C .30 MG" id="f701-343e-723e-dd06" hidden="false" type="profile" targetId="Mle. 38C .30 MG"/>
+        <infoLink name="Smoke Launchers" id="48ea-1e1d-ed85-06f1" hidden="false" type="profile" targetId="Smoke Launchers"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="DAG-8 &quot;Blossom&quot;" hidden="false" id="fcbe-421b-63da-467a">
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="ea21-ca48-5c0b-d514" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="31cc-81d2-83f4-fa64" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Towed Anti-Tank Gun" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="519e-a6d0-4940-54e5">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">3&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ DAG-8 3.3-inch Gun - APDS" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0c95-1dd9-742a-2ba2">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">10/15</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ DAG-8 3.3-inch Gun - HE-Frag" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7f27-88e3-1139-e650">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC, Thermal Sights, Ignore Cover (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mle. 38 .30 LMG" id="7a5a-bb50-aa98-220a" hidden="false" type="profile" targetId="Mle. 38 .30 LMG"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VBD-1B “Tanner-R”" hidden="false" id="8efe-4639-6950-6dbe">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="9828-c8f2-80ad-f5f5" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Lupar" hidden="false" id="c636-5d0e-6da6-b626" targetId="dce2-0c88-f9f4-a415" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Recoilless Rifle Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="574e-7667-47b8-d60c">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Amphibious" id="0eee-9bcd-fa08-a890" hidden="false" type="rule" targetId="Amphibious"/>
+        <infoLink name="NBC" id="5a1f-6199-d71f-f61c" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Personnel Carrier" id="a549-73bb-c75e-fe41" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(1, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - Canister" id="0862-544f-b211-af36" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle - Canister">
+          <modifiers>
+            <modifier type="set" value="➤ TAP 30 4.2-inch Recoilless Rifle - Canister" field="name"/>
+            <modifier type="set" value="4" field="3dff-e6a1-8ebe-a4ec"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - HEAT" id="0b10-d1de-721a-21dd" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle">
+          <modifiers>
+            <modifier type="set" value="➤ TAP 30 4.2-inch Recoilless Rifle - HEAT" field="name"/>
+            <modifier type="set" value="12/2" field="3c88-8ccc-7c7c-d717"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - Smoke" id="08b8-c995-ae2b-ad51" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle - Smoke">
+          <modifiers>
+            <modifier type="set" value="➤ TAP 30 4.2-inch Recoilless Rifle - Smoke" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="CdA-25 &quot;Saucer&quot;" hidden="false" id="224c-1264-1c18-c0db">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="55df-924e-ff51-6e66" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="fa39-b942-5ab5-3562" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tank Destroyer" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="96b8-d515-dc1a-345b">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">6/3/2</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="SA25 2.5-inch High Velocity Gun" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="442c-e438-9722-744f">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">12/18</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="17d6-d243-f3e1-3bfc" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Mtl. 19 .50 HMG" id="f3a0-4379-bdc2-ff5f" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifiers>
+            <modifier type="set" value="Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="DAG-16 &quot;Cherry&quot;" hidden="false" id="0436-3558-9e26-0370">
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="cc5c-a929-7583-cb6b" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Lupar" hidden="false" id="1b32-7023-d647-eb47" targetId="dce2-0c88-f9f4-a415" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Towed Howitzer" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="e284-b6df-5a95-bdd4">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">2&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ DAG-16 7.8-inch Howitzer - Frag" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="b3b5-b570-fadc-9bd3">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D6</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC, Air-Filling, Heavy Indirect (4), Radius (3”)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ DAG-16 7.8-inch Howitzer - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="a262-11ef-8c06-9acd">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">16/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC, Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ DAG-16 7.8-inch Howitzer - Canister" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="5d30-77c3-946c-6394">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">6</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ DAG-16 7.8-inch Howitzer - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="9cde-8257-ec0f-3b5a">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC, Heavy Indirect (2), Smoke (5”)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="703c-7019-29ce-3c37" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VBD Special “Lugus”" hidden="false" id="6289-3e63-0f33-634f">
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="13b6-8dc8-9ee3-2ca0" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Lupar" hidden="false" id="834b-895d-0943-efed" targetId="dce2-0c88-f9f4-a415" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Recoilless Rifle Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="bd84-c1dc-3f37-8ea3">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">3/2/1+</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - Canister" id="8336-4131-31f1-ba1a" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle - Canister">
+          <modifiers>
+            <modifier type="set" value="➤ TAP 25 4.2-inch Recoilless Rifle Battery - Canister" field="name"/>
+            <modifier type="set" value="4" field="3dff-e6a1-8ebe-a4ec"/>
+            <modifier type="set" value="Ammo 6, Barrage (6, Point), Defensive CC (Inf.)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - HEAT" id="113d-dab8-81aa-a6fb" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle">
+          <modifiers>
+            <modifier type="set" value="➤ TAP 25 4.2-inch Recoilless Rifle Battery - HEAT" field="name"/>
+            <modifier type="set" value="10/2" field="3c88-8ccc-7c7c-d717"/>
+            <modifier type="set" value="Ammo 6, Barrage (6, Point), No CC (Inf.), Shaped Charge" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - Smoke" id="263b-6082-a3c1-dfdd" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle - Smoke">
+          <modifiers>
+            <modifier type="set" value="➤ TAP 25 4.2-inch Recoilless Rifle Battery - Smoke" field="name"/>
+            <modifier type="set" value="Ammo 6, Barrage (6, Point), No CC, Smoke (4&quot;)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Lugus" id="27b0-ad1e-0d46-1a3f" hidden="false" noindex="true">
+          <description>This unit uses a 40x40mm base. Infantry cannot desant.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="CdA-36 &quot;Broomcloud&quot;" hidden="false" id="c7e4-49d1-d972-9072">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="5619-3b34-5a27-080c" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Lupar" hidden="false" id="556e-ca0f-38e8-d8fc" targetId="dce2-0c88-f9f4-a415" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Self-Propelled Anti-Air Gun" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="3f41-5f3e-5e2a-7ad2">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">6/3/1+</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="APX-40 1.5-inch Autocannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="152f-59b2-a86e-5fa5">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">36&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/7</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, No CC (Inf.), Radar Anti-Air, Tracking, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="CdS-F2 &quot;Aurora&quot;" hidden="false" id="66a4-8a5f-56e7-169c">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="412c-eedf-0a98-0c14" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="6434-41cb-654e-27cc" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Rocket Truck" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="4697-5ba1-5ebf-2b8f">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/2/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Mle. 13 5.2-inch Rocket Rack" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="f18b-91d5-ee4a-7bc8">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12-∞”</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6/6</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Air-filling, Ignore Cover (1), Heavy Indirect (3), No CC, Saturating (6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="VdIM-K &quot;Karve&quot;" hidden="false" id="5a25-90ab-2a5e-fcdc">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="ccc2-c881-3dc4-7a5a" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="7b0f-9af6-47dc-1a20" primary="false" name="Lupar"/>
+        <categoryLink targetId="67f2-d344-cbe3-ac27" id="b49e-9cf5-3255-1755" primary="true" name="Watercraft"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="VdIM-K &quot;Karve&quot;" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="3ebd-30f2-5a43-88c7">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">12&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/2/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mtl. 19 .50 HMG" id="3922-cdc2-7b54-2e3a" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifiers>
+            <modifier type="set" value="Turret" field="6179-e464-2408-8ef1"/>
+            <modifier type="set" value="4+/4+" field="d665-cce3-dfb4-664b"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Personnel Carrier" id="f8a7-8664-085a-fff2" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(4, All)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Watercraft" id="c03e-a72c-a8bb-d28e" hidden="false" type="rule" targetId="Watercraft"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VZ61 &quot;Chariots&quot;" hidden="false" id="269e-9635-5fe7-b24a">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="16b5-dd03-0e11-71c5" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="8533-c651-b8fa-b203" primary="false" name="Lupar"/>
+        <categoryLink targetId="4337-935c-91cb-9180" id="5008-4924-db36-5be8" primary="true" name="Helicopter"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ducted Fan Platforms" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="4ed2-7adf-f1da-bef8">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">18&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mle. 38 .30 LMG" id="bea1-1ee2-7edb-348b" hidden="false" type="profile" targetId="Mle. 38 .30 LMG">
+          <modifiers>
+            <modifier type="set" value="Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Mle. 44 3.5-inch RPG" id="f3a5-eb0d-65be-3c18" hidden="false" type="profile" targetId="Mle. 44 3.5-inch RPG">
+          <modifiers>
+            <modifier type="set" value="Ammo 4, Shaped Charge, Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Chariots" id="d51a-9c03-6134-4e75" hidden="false">
+          <description>This unit uses a 40x40mm base and can be depleted as if it were an infantry squad. When landed, unit class counts as Inf (S); it may fire all weapons and enter close combat as if it were infantry. May land in forests and inside of buildings as a squad-sized garrison.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="AES514 &quot;Backbone&quot;" hidden="false" id="0959-e079-3bc2-5557">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="784c-43d6-ba54-a2e5" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="4a6e-3052-0e76-882d" primary="false" name="Lupar"/>
+        <categoryLink targetId="4337-935c-91cb-9180" id="48a7-cdcc-c340-c624" primary="true" name="Helicopter"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heavy Lift Helicopter" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="0de6-6c16-ddfd-4fbc">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">24&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Chaff-Flares" id="ed52-30e8-1627-983b" hidden="false" type="rule" targetId="Chaff-Flares"/>
+        <infoLink name="Personnel Carrier" id="a57e-256f-9960-5882" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Sides)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tow" id="f095-1829-ff1f-92d5" hidden="false" type="rule" targetId="Tow">
+          <modifiers>
+            <modifier type="append" value="(10)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Backbone" id="1af2-76ce-0df7-65fb" hidden="false">
+          <description>Embarked infantry can fire all weapons at stationary accuracy.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AES805 &quot;Tornado&quot;" hidden="false" id="52a9-6d4a-f9a1-29c7">
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="952b-c66f-a541-22a3" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="0ea0-08b8-04f2-665c" primary="false" name="Lupar"/>
+        <categoryLink targetId="4337-935c-91cb-9180" id="0268-bf25-fbe4-272f" primary="true" name="Helicopter"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <profiles>
+        <profile name="Attack Helicopter" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="6f3a-98b4-24c4-46ae">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">32&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">3/3/2</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Chaff-Flares" id="cc19-8581-2f3d-a931" hidden="false" type="rule" targetId="Chaff-Flares"/>
+        <infoLink name="APX-30 1-inch Autocannon" id="2fd9-92ad-12f9-b117" hidden="false" type="profile" targetId="APX-30 1-inch Autocannon">
+          <modifiers>
+            <modifier type="set" value="Ammo 4" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ SD84 4.7-inch Missile Launcher - ATGM" id="0907-eb5b-8087-30cf" hidden="false" type="profile" targetId="SD84 4.7-inch Missile Launcher - ATGM">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3+/4+" field="d665-cce3-dfb4-664b"/>
+                <modifier type="append" value="Door Gun (Front, Sides)" field="6179-e464-2408-8ef1" join=", "/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink name="➤ SD84 4.7-inch Missile Launcher - MANPADS" id="336b-ab38-191c-f396" hidden="false" type="profile" targetId="SD84 4.7-inch Missile Launcher - MANPADS">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Door Gun (Front, Sides)" field="6179-e464-2408-8ef1" join=", "/>
+                <modifier type="set" value="4+/4+" field="d665-cce3-dfb4-664b"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="R-2 &quot;Chien de Chasse" hidden="false" id="d40f-8326-5715-7f13">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="c771-1435-e7f4-d194" primary="true" name="Aircraft"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="bf25-3d8b-d526-5866" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Observation Aircraft" typeId="bc88-9949-5b2a-9493" typeName="Unit (Aircraft)" hidden="false" id="1efd-2a50-6343-b9a6">
+          <characteristics>
+            <characteristic name="Type" typeId="9265-2ade-09bd-09d9">CAS</characteristic>
+            <characteristic name="M" typeId="e85a-c562-a781-84ab">10&quot;</characteristic>
+            <characteristic name="Q" typeId="0103-c752-ce78-b142">2</characteristic>
+            <characteristic name="T" typeId="7ba2-0bd2-bda2-c5fa">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Loiter" id="70b9-c75f-dd12-021d" hidden="false" type="rule" targetId="Loiter"/>
+        <infoLink name="Mle. 7 Laser Designator" id="897e-e3c3-7ef8-45c9" hidden="false" type="profile" targetId="Mle. 7 Laser Designator"/>
+        <infoLink name="Mtl. 19 .50 HMG" id="6217-bcfb-f502-cbbf" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="6+" field="d665-cce3-dfb4-664b"/>
+                <modifier type="set" value="4&quot;" field="3b82-4c54-f4a1-41d7"/>
+                <modifier type="set" value="2" field="3c88-8ccc-7c7c-d717"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Chien de Chasse" id="9fd3-f776-725f-2c3a" hidden="false">
+          <description>Does not break designation when it moves. Designation is broken when the target leaves the aircraft’s frontal arc. ______________________</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="AD-48 &quot;Falconet&quot;" hidden="false" id="0cf6-9384-a004-8a29">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="7784-29f9-a759-1f0d" primary="true" name="Aircraft"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="182c-39a7-82d3-d445" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Light Attack Aircraft" typeId="bc88-9949-5b2a-9493" typeName="Unit (Aircraft)" hidden="false" id="7560-4849-755f-90a9">
+          <characteristics>
+            <characteristic name="Type" typeId="9265-2ade-09bd-09d9">CAS</characteristic>
+            <characteristic name="M" typeId="e85a-c562-a781-84ab">14&quot;</characteristic>
+            <characteristic name="Q" typeId="0103-c752-ce78-b142">3</characteristic>
+            <characteristic name="T" typeId="7ba2-0bd2-bda2-c5fa">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mtl. 19 .50 HMGs, octet" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="a77f-d1a2-9412-5f3e">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">4&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1"/>
+          </characteristics>
+        </profile>
+        <profile name="LR-49 2.7-inch HEAT Rocket Pod" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="da33-54b6-b003-6825">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6/1</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">4</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Barrage (2), Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="BLG-64 500-lb. HE Cluster Bomb" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="c8dc-7419-a323-540f">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">2+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Air-Filling, Rear Attack, Saturating (4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Chaff-Flares" id="df67-3750-c77f-f0ed" hidden="false" type="rule" targetId="Chaff-Flares"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="AP-IV &quot;Grognard&quot;" hidden="false" id="b89d-da30-b099-4cae">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="76b1-eb75-9e1c-460f" primary="true" name="Aircraft"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="e0f3-8406-5aa7-5042" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Fighter-Bomber" typeId="bc88-9949-5b2a-9493" typeName="Unit (Aircraft)" hidden="false" id="3bbd-0650-df66-dbe0">
+          <characteristics>
+            <characteristic name="Type" typeId="9265-2ade-09bd-09d9">CAP</characteristic>
+            <characteristic name="M" typeId="e85a-c562-a781-84ab">16&quot;</characteristic>
+            <characteristic name="Q" typeId="0103-c752-ce78-b142">3</characteristic>
+            <characteristic name="T" typeId="7ba2-0bd2-bda2-c5fa">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="APX-40 1.4-inch Revolver Cannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="4454-943b-7845-f71a">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="MA-67 4.7-inch Infrared AAM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="12e6-2a1c-a04c-26df">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (1), Homing</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="SD68 8-inch TV-Guided Bomb" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="fb98-0172-96ca-c236">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Air-Filling, Guided Missile (2), Radius (3&quot;), Rear Attack</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Nimble" id="adc7-7869-3c6a-fa19" hidden="false" type="rule" targetId="Nimble"/>
+        <infoLink name="Chaff-Flares" id="b450-d929-ac3b-003f" hidden="false" type="rule" targetId="Chaff-Flares"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="MD-II &quot;Mist&quot;" hidden="false" id="98c6-7461-e0b3-3f3c">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="2d71-0641-a3f6-d52c" primary="true" name="Aircraft"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="1d8a-787a-3ba4-0674" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="MA-67B 4.7-inch Infrared AAM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="5b58-50fa-31bb-f400">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (1), Homing</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="APX-40 1.4-inch Revolver Cannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="f431-811f-4821-5ed3">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Air Superiority Fighter" typeId="bc88-9949-5b2a-9493" typeName="Unit (Aircraft)" hidden="false" id="ff2e-6e72-eb0f-fb01">
+          <characteristics>
+            <characteristic name="Type" typeId="9265-2ade-09bd-09d9">CAP</characteristic>
+            <characteristic name="M" typeId="e85a-c562-a781-84ab">20&quot;</characteristic>
+            <characteristic name="Q" typeId="0103-c752-ce78-b142">4</characteristic>
+            <characteristic name="T" typeId="7ba2-0bd2-bda2-c5fa">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="MA-62 7.9-inch Semi-Active AAM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7149-54ac-e478-3a3c">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Barrage (2, Point), Guided Missile (1), No CC</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
-    <profile name="Mle. 38 .30 LMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7da8-02ab-def4-c3e7">
+    <profile name="Mle. 38 .30 LMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Mle. 38 .30 LMG">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">10&quot;</characteristic>
@@ -716,7 +1638,7 @@
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
       </characteristics>
     </profile>
-    <profile name="Mle. 44 3.5-inch RPG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="51ad-9ace-dab9-6570">
+    <profile name="Mle. 44 3.5-inch RPG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Mle. 44 3.5-inch RPG">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
@@ -796,13 +1718,13 @@
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile name="Mle. 7 Laser Designator" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0fb7-b1b7-57dd-cfaf">
+    <profile name="Mle. 7 Laser Designator" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Mle. 7 Laser Designator">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
         <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
-        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec"/>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Designator</characteristic>
       </characteristics>
     </profile>
@@ -839,7 +1761,7 @@
     <profile name="➤ SD84 4.7-inch Missile Launcher - ATGM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="SD84 4.7-inch Missile Launcher - ATGM">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
-        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6-60&quot;</characteristic>
         <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
@@ -854,6 +1776,26 @@
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Guided Missile (2), Shaped Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="APX-30 1-inch Autocannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="APX-30 1-inch Autocannon">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">4/6</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">No CC (Inf.), Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mle. 38C .30 MG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Mle. 38C .30 MG">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Turret</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
