@@ -1,11 +1,11 @@
 Firelock 198X
 ==================
 
-[![Latest release](https://img.shields.io/github/release/BSData/Firelock-198X.svg?style=flat-square)](https://github.com/BSData/Firelock-198X/releases/latest)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/Firelock-198X/latest.svg?style=flat-square)](https://github.com/BSData/Firelock-198X/releases)
-[![Open bugs](https://img.shields.io/github/issues/BSData/Firelock-198X/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/Firelock-198X/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Contributors](https://img.shields.io/github/contributors/BSData/Firelock-198X.svg?style=flat-square)](https://github.com/BSData/Firelock-198X/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/Firelock-198X.svg?style=flat-square)](https://github.com/BSData/Firelock-198X/pulse/monthly)
+[![Latest release](https://img.shields.io/github/release/Betterwithketchup/Firelock-198X.svg?style=flat-square)](https://github.com/Betterwithketchup/Firelock-198X/releases/latest)
+[![Commits (since latest release)](https://img.shields.io/github/commits-since/Betterwithketchup/Firelock-198X/latest.svg?style=flat-square)](https://github.com/Betterwithketchup/Firelock-198X/releases)
+[![Open bugs](https://img.shields.io/github/issues/Betterwithketchup/Firelock-198X/bug.svg?style=flat-square&label=bugs)](https://github.com/Betterwithketchup/Firelock-198X/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+[![Contributors](https://img.shields.io/github/contributors/Betterwithketchup/Firelock-198X.svg?style=flat-square)](https://github.com/Betterwithketchup/Firelock-198X/graphs/contributors)
+[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/Betterwithketchup/Firelock-198X.svg?style=flat-square)](https://github.com/Betterwithketchup/Firelock-198X/pulse/monthly)
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
 
@@ -31,4 +31,4 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 * [BattleScribe app homepage](https://www.battlescribe.net/)
 
 [BSData.net]: https://www.bsdata.net/
-[bug report]: https://github.com/BSData/Firelock-198X/issues/new/choose
+[bug report]: https://github.com/Betterwithketchup/Firelock-198X/issues/new/choose

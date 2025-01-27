@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Waykeeper Judge" hidden="false" id="4111-78c5-969a-92c7">
       <categoryLinks>
-        <categoryLink name="TACOM" hidden="false" id="1261-5842-f224-5e3b" targetId="default-category" primary="true"/>
         <categoryLink name="Infantry" hidden="false" id="29f2-eafb-ee06-ec9c" targetId="1348-366f-efec-ce89" primary="false"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="e143-1de7-daaa-8e28" primary="false" name="Lupar"/>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="4612-bfc6-03bc-48ff" primary="true" name="TACOM"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
@@ -27,11 +28,28 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="7810-3703-56f7-e7f6" hidden="false" type="profile" targetId="fb71-8565-2ff6-d9f1">
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="7810-3703-56f7-e7f6" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle">
           <modifiers>
             <modifier type="set" value="3+/4+" field="d665-cce3-dfb4-664b"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Guidance" id="e58e-c967-a17f-7de8" hidden="false" type="rule" targetId="Guidance">
+          <modifiers>
+            <modifier type="append" value="(12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Brigade" id="70ec-ce26-5f5f-c3a7" hidden="false" type="rule" targetId="Brigade">
+          <modifiers>
+            <modifier type="append" value="(3, 12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sense" id="23df-b93a-2f3e-dbba" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stimulant-Laced Bomb, “Signal Salt”" id="223d-95b5-ad8a-d8be" hidden="false" type="profile" targetId="e1ba-fb83-4462-33f6"/>
+        <infoLink name="Teeth &amp; Claws" id="9a2e-fbad-3af9-ca92" hidden="false" type="profile" targetId="a86e-bcc6-321a-1bd0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Company Chief" hidden="false" id="2366-f461-f854-98ff">
@@ -52,20 +70,37 @@
         <infoLink name="Mle. 44 3.5-inch RPG" id="4e09-167a-6193-cc5a" hidden="false" type="profile" targetId="51ad-9ace-dab9-6570"/>
         <infoLink name="OtPv. 9 30-inch Machete" id="055c-f938-cd3c-b0d0" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
         <infoLink name="Bloodlust" id="4d25-9a25-aabe-11cb" hidden="false" type="rule" targetId="Bloodlust"/>
-        <infoLink name="Melee" id="fce7-3fc9-12af-6d84" hidden="false" type="rule" targetId="Melee"/>
-        <infoLink name="Small Arm" id="6a91-ec3e-417d-5ba2" hidden="false" type="rule" targetId="Small Arm"/>
+        <infoLink name="Stimulant-Laced Bomb, “Signal Salt”" id="ddba-11b5-4b28-6021" hidden="false" type="profile" targetId="e1ba-fb83-4462-33f6"/>
+        <infoLink name="Brigade" id="9d3a-b0c8-70ad-08c0" hidden="false" type="rule" targetId="Brigade">
+          <modifiers>
+            <modifier type="append" value="(4, 8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Infiltrator" id="e372-c652-5fc3-fc1e" hidden="false" type="rule" targetId="Infiltrator"/>
+        <infoLink name="Sense" id="685f-cf12-dfd6-c624" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="default-category" id="bd99-a877-2702-9317" primary="true" name="TACOM"/>
         <categoryLink targetId="1348-366f-efec-ce89" id="d3e9-4666-11b7-15df" primary="false" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="06c2-4e1c-d22d-9093" primary="false" name="Lupar"/>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="4ab6-b6e2-6be4-4196" primary="true" name="TACOM"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Territorials" hidden="false" id="5c21-318a-1a0a-3cfc">
       <infoLinks>
-        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="315f-67dd-b800-ba1c" hidden="false" type="profile" targetId="fb71-8565-2ff6-d9f1"/>
-        <infoLink name="OtPv. 9 30-inch Machete" id="121a-964d-18d5-ebb8" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="315f-67dd-b800-ba1c" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle"/>
         <infoLink name="OtPv. 9 30-inch Machete" id="7e0a-99da-1fe8-0b60" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
         <infoLink name="Infiltrator" id="4cc9-e07d-1eda-7aa8" hidden="false" type="rule" targetId="Infiltrator"/>
+        <infoLink name="Sense" id="00c2-bf9d-d7d6-19e9" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bloodlust" id="f0ff-8aa5-c047-7c96" hidden="false" type="rule" targetId="Bloodlust"/>
+        <infoLink name="Amphibious" id="08b2-d7bb-e326-c759" hidden="false" type="rule" targetId="Amphibious"/>
       </infoLinks>
       <profiles>
         <profile name="Territorials" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="aca1-a983-ad04-c822">
@@ -81,6 +116,7 @@
       </profiles>
       <categoryLinks>
         <categoryLink targetId="1348-366f-efec-ce89" id="99a9-1c05-65a9-c742" primary="true" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="809b-ca3a-0831-ae90" primary="false" name="Lupar"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="5"/>
@@ -92,6 +128,7 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="1348-366f-efec-ce89" id="671a-9d26-b7de-3273" primary="true" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="f730-5c14-e2a7-bb16" primary="false" name="Lupar"/>
       </categoryLinks>
       <profiles>
         <profile name="Chasseurs" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="3458-360b-2259-e630">
@@ -107,25 +144,41 @@
       </profiles>
       <infoLinks>
         <infoLink name="Mle. 38 .30 LMG" id="e2dd-0944-aec2-b934" hidden="false" type="profile" targetId="7da8-02ab-def4-c3e7"/>
+        <infoLink name="Infiltrator" id="a1f7-63e0-1f76-88b9" hidden="false" type="rule" targetId="Infiltrator"/>
+        <infoLink name="Bloodlust" id="c656-0999-6471-f940" hidden="false" type="rule" targetId="Bloodlust"/>
+        <infoLink name="Sense" id="6a40-2304-d10a-cc89" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="OtPv. 9 30-inch Machete" id="fc36-060a-9a1b-8727" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
+        <infoLink name="Mle. 44 3.5-inch RPG" id="6214-96b7-beb4-637c" hidden="false" type="profile" targetId="51ad-9ace-dab9-6570"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Abilities" id="9da4-041e-3daa-b9e9" hidden="false" collapsible="true" defaultSelectionEntryId="none">
-          <infoLinks>
-            <infoLink name="Infiltrator" id="9483-8842-6657-ca2e" hidden="false" type="rule" targetId="Infiltrator"/>
-          </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="CdS-F1 &quot;Kennel&quot;" hidden="false" id="e4b4-6727-ab3c-a83a">
+    <selectionEntry type="unit" import="true" name="CdS-F1 &quot;Kennel&quot;" hidden="false" id="e4b4-6727-ab3c-a83a" collapsible="false">
       <costs>
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="9673-aaa8-fcaa-af6e" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="1fc4-9f98-f544-73d3" primary="false" name="Lupar"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Mtl. 19 .50 HMG" id="71a8-7c97-0224-0ba1" hidden="false" type="profile" targetId="1340-ad95-3a45-c987"/>
-        <infoLink name="Resupply" id="da2a-10f4-bbf6-9643" hidden="false" type="profile" targetId="Resupply"/>
+        <infoLink name="Mtl. 19 .50 HMG" id="71a8-7c97-0224-0ba1" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifiers>
+            <modifier type="set" value="Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Resupply" id="da2a-10f4-bbf6-9643" hidden="false" type="rule" targetId="Resupply">
+          <modifiers>
+            <modifier type="append" value="6" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Personnel Carrier" id="3141-3b4a-c4fb-695b" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="CdS-F1 &quot;Kennel&quot;" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="821c-bbda-9ee1-a642">
@@ -139,6 +192,295 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Internal Security Escort" hidden="false" id="31a8-0d6b-b736-a626">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="f8ee-2689-8d05-dd22" primary="false" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="ba8d-9c5d-d15c-fbf1" primary="false" name="Lupar"/>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="ce87-38bd-2728-e896" primary="true" name="TACOM"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Internal Security Escort" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="a447-e557-4a56-4ec3">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">5</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/1+/1+</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="OtPv. 9 30-inch Machete" id="eba3-f35c-191e-df87" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
+        <infoLink name="OtDs. 13 Tactical Breaching Charge" id="54c0-d9b1-82d0-cf15" hidden="false" type="profile" targetId="e8b2-9aab-f84c-3715"/>
+        <infoLink name="➤ FdcL 63 4-gauge Shotgun - Houndshot" id="3b8b-77ac-bf63-6eb3" hidden="false" type="profile" targetId="6592-a76e-be94-a4aa"/>
+        <infoLink name="➤ FdcL 63 4-gauge Shotgun - Rifled Slug" id="6df9-c414-c337-8d7a" hidden="false" type="profile" targetId="9ea1-d5a6-f3e5-14ce"/>
+        <infoLink name="Stimulant-Laced Filter, “Signal Snuff”" id="a55b-8cff-bbd8-d9f6" hidden="false" type="profile" targetId="e679-6d11-ae60-40d6"/>
+        <infoLink name="NBC" id="b982-3ead-1583-2a90" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Assault Specialist" id="bc34-d6f6-13fe-fca3" hidden="false" type="rule" targetId="Assault Specialist"/>
+        <infoLink name="Brigade" id="182c-3b97-0477-daee" hidden="false" type="rule" targetId="Brigade">
+          <modifiers>
+            <modifier type="append" value="(3, 4&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="White Gloves" hidden="false" id="4bc0-2d96-d21b-0a27">
+      <infoLinks>
+        <infoLink name="Bloodlust" id="4d0a-f242-6c3d-d567" hidden="false" type="rule" targetId="Bloodlust"/>
+        <infoLink name="Sense" id="79d9-8646-e051-7ffe" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Elite" id="8749-daf1-34e2-fa4d" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="Mle. 7 Laser Designator" id="84f7-3309-21bf-cdd8" hidden="false" type="profile" targetId="0fb7-b1b7-57dd-cfaf">
+          <modifiers>
+            <modifier type="append" value="Discreet" field="6179-e464-2408-8ef1" join=", "/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="White Gloves" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="71c4-245d-558e-58c6">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Mle. 52F .30 Automatic Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6541-81fa-3cba-8b99">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Lacra 3.5-inch Shouldered R. R. - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="916b-7acd-0196-4fcb">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">9/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Ammo 3, Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Lacra 3.5-inch Shouldered R. R. - Rocket Assisted Sabot" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="9cf0-9412-fa05-f9ae">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/12</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Ammo 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Lacra 3.5-inch Shouldered R. R. - Incendiary" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="13d0-f205-d708-177c">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Ammo 3, Ignore Cover (2), Rear Attack</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mle. 313 26-inch Side Saber" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0ed4-fe91-8126-5f23">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="6fb8-b6de-1dce-f8d7" primary="true" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="405e-3e1c-451c-34aa" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Internal Security" hidden="false" id="e759-21a2-9706-5d22">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="3812-6fb1-9ef2-bc16" primary="true" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="4a94-2c5b-5cff-a2a2" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Internal Security" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="5634-f9be-a871-e8c8">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/1+/1+</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault Specialist" id="2ebd-bb58-788b-c0b0" hidden="false" type="rule" targetId="Assault Specialist"/>
+        <infoLink name="NBC" id="9430-d4a2-19b6-1a48" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="➤ FdcL 63 4-gauge Shotgun - Houndshot" id="c4d8-7e8d-b611-18c0" hidden="false" type="profile" targetId="6592-a76e-be94-a4aa"/>
+        <infoLink name="➤ FdcL 63 4-gauge Shotgun - Rifled Slug" id="aa08-0479-4195-1a9d" hidden="false" type="profile" targetId="9ea1-d5a6-f3e5-14ce"/>
+        <infoLink name="OtPv. 9 30-inch Machete" id="9298-d66d-e8e8-abdb" hidden="false" type="profile" targetId="b9f8-e60c-abd5-fc04"/>
+        <infoLink name="Stimulant-Laced Filter, “Signal Snuff”" id="a76e-11de-191a-eaef" hidden="false" type="profile" targetId="e679-6d11-ae60-40d6"/>
+        <infoLink name="OtDs. 13 Tactical Breaching Charge" id="8d30-fffc-8bd6-4494" hidden="false" type="profile" targetId="e8b2-9aab-f84c-3715"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Machine Gun Team" hidden="false" id="8c3c-e33b-4a1a-8704">
+      <profiles>
+        <profile name="Machine Gun Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="0a42-a1e1-0ae0-307d">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+          <comment>ANTI-PERSONNEL/MATERIEL TEAM</comment>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="401d-b0d9-76a6-e723" primary="true" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="fa30-4e3a-bada-2dbc" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="4094-c19b-10ba-94f8" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle"/>
+        <infoLink name="Mtl. 19 .50 HMG" id="18e1-169a-ccf2-3967" hidden="false" type="profile" targetId="Mtl. 19 .50 HMG">
+          <modifiers>
+            <modifier type="set" value="Defensive CC" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bloodlust" id="6083-9d59-3278-8bb6" hidden="false" type="rule" targetId="Bloodlust"/>
+        <infoLink name="Infiltrator" id="563d-9f95-f295-eb73" hidden="false" type="rule" targetId="Infiltrator"/>
+        <infoLink name="Sense" id="bf16-f2b8-874d-70c6" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hima Team" hidden="false" id="2f71-4e33-c38c-10d3">
+      <profiles>
+        <profile name="Hima Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="f3b9-63f5-ff69-cb95">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ Lacra-76 “Hima” 3-inch Launcher - Frag" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="c313-e08e-dd96-6ba8">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Air-Filling, Light Indirect, No CC, Radius (2”), Ammo 4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Lacra-76 “Hima” 3-inch Launcher - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="4447-eca4-4ac8-52ad">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Shaped Charge, Ammo 4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Lacra-76 “Hima” 3-inch Launcher - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="dee5-853d-50e8-9c1e">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Light Indirect, No CC, Smoke (3&quot;), Ammo 4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Lacra-76 “Hima” 3-inch Launcher - Signal Salt" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="c60c-3f32-a29b-86fc">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Light Indirect, No CC, Radius (3”), Rally (Salt), Ammo 4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="6fea-26eb-1792-ee7f" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle"/>
+        <infoLink name="Bloodlust" id="e95b-ffae-6248-e0b3" hidden="false" type="rule" targetId="Bloodlust"/>
+        <infoLink name="Sense" id="b645-f1aa-b8d7-3dc2" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="49dd-e01c-50f8-8fdc" primary="true" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="125c-632c-009b-cdbe" primary="false" name="Lupar"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Recoilless Rifle Team" hidden="false" id="5126-4274-924d-4781">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="72c8-24ff-dade-a2ca" primary="true" name="Infantry"/>
+        <categoryLink targetId="dce2-0c88-f9f4-a415" id="a4d3-9164-699e-a4b2" primary="false" name="Lupar"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Recoilless Rifle Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="0fe9-197c-dc40-50e7">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bloodlust" id="ed34-3c02-be45-d0c2" hidden="false" type="rule" targetId="Bloodlust"/>
+        <infoLink name="Infiltrator" id="5d06-3efa-eef4-64a3" hidden="false" type="rule" targetId="Infiltrator"/>
+        <infoLink name="Sense" id="3b05-430f-7bd4-1dda" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Mle. 32 .30 Self-loading Rifle" id="2c40-0338-46b7-4528" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
@@ -162,7 +504,7 @@
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile name="Mle. 32 .30 Self-loading Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="fb71-8565-2ff6-d9f1">
+    <profile name="Mle. 32 .30 Self-loading Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Mle. 32 .30 Self-loading Rifle">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
@@ -182,29 +524,102 @@
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Shaped Charge, Small Arm</characteristic>
       </characteristics>
     </profile>
-    <profile name="Mtl. 19 .50 HMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="1340-ad95-3a45-c987">
+    <profile name="Mtl. 19 .50 HMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Mtl. 19 .50 HMG">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
         <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
-        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Turret</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1"/>
+      </characteristics>
+    </profile>
+    <profile name="Stimulant-Laced Bomb, “Signal Salt”" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="e1ba-fb83-4462-33f6">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Light Indirect, Radius (3&quot;), Rally (Salt)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ FdcL 63 4-gauge Shotgun - Rifled Slug" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="9ea1-d5a6-f3e5-14ce">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="OtDs. 13 Tactical Breaching Charge" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="e8b2-9aab-f84c-3715">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">12/12</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">D1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ FdcL 63 4-gauge Shotgun - Houndshot" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6592-a76e-be94-a4aa">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stimulant-Laced Filter, “Signal Snuff”" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="e679-6d11-ae60-40d6">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Self</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Discreet, Rally (Salt)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Teeth &amp; Claws" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="a86e-bcc6-321a-1bd0">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mle. 7 Laser Designator" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0fb7-b1b7-57dd-cfaf">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec"/>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Designator</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Bloodlust" id="Bloodlust" hidden="false">
-      <description>A wolf in uniform is still a wolf. The smell of blood drives undisciplined troops into a killing frenzy. 
-
+      <description>*A wolf in uniform is still a wolf. The smell of blood drives undisciplined troops into a killing frenzy.*
 
 If this infantry unit reaches six pin tokens during the Fire Phase, the unit must roll a 4+ check on a D6 to avoid going berserk. Place a berserk token on the unit if it fails. When a unit gains a berserk token, all other Lupar infantry with the Bloodlust trait within 3” also roll to go berserk. This chain re-action will continue until all infantry succeed their checks or there are no more units with Bloodlust within range. Units do not roll to go berserk more than once per round, and they may choose to willingly go berserk. Immediately remove all pin tokens from units that go berserk. Berserk units cannot gain pin tokens and can re-roll all attack rolls made in close combat. However, they do not benefit from cover and must always fire at moving accuracy (even in close combat). During the Maneuver Phase, berserk units must sprint toward the nearest corpse or living enemy unit that they can possibly kill, whichever is closer (unless they have a stationary fire token). These obligatory move actions do not cost command tokens, and occur automatically at the beginning of the phase before normal move actions are declared by anyone. A unit remains berserk until it is targeted by a Rally weapon or it gorges on a corpse token. Units with Bloodlust may choose to gorge on a corpse even if not currently berserk. Gorging automatically occurs when a unit with Bloodlust enters full basal contact with a corpse token. This unit spends the rest of the phase tearing chunks off of the corpses. In the beginning of the subsequent Support Phase, before any other actions occur, remove the corpse token. Flip the unit’s berserk token to show that it is satiated. This unit will not roll berserk checks for the rest of the battle. Multiple units may gorge on the same corpse token if they are in simultaneous contact with it at the beginning of the Support Phase. Berserk units may not call or participate in brigade movement. Embarked units do not roll to go berserk.</description>
     </rule>
     <rule name="Infiltrator" id="Infiltrator" hidden="false">
       <description>*Whether warden or poacher, the lupar are natural hunters—the wilder, the better.*
 
-
 This unit may deploy up to 16” inches away from deployment edge into occluding terrain (or terrain that puts infantry into ambush, such as dead ground or entrenchment) before standard deployment. Multiple players with Infiltrators must alternate their deployments.</description>
+    </rule>
+    <rule name="Guidance" id="Guidance" hidden="false">
+      <description>*The stories of the Waykeepers steel the nerves of their flock against the temptations of fresh meat.*
+
+This unit soothes friendly Lupar within X number of inches from itself. Units which enter this radius automatically lose their berserk tokens, if berserk, and units inside of the radius cannot gain them. A unit that loses its berserk token this way does not become satiated. Units within the radius never have to roll to go berserk for any reason</description>
     </rule>
   </sharedRules>
 </catalogue>
