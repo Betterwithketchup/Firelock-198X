@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Waykeeper Judge" hidden="false" id="4111-78c5-969a-92c7">
       <categoryLinks>
@@ -11,7 +11,7 @@
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
       </costs>
       <profiles>
-        <profile name="Waykeeper Judge" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="14de-b7d7-e18c-215e">
+        <profile name="Religious Leader" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="14de-b7d7-e18c-215e">
           <characteristics>
             <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
             <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24</characteristic>
@@ -21,12 +21,12 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663">5</characteristic>
           </characteristics>
         </profile>
+        <profile name="Waykeeper Judge" typeId="Abilities" typeName="Abilities" hidden="false" id="f287-ad84-ee65-4304">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">While this unit is alive, no unit in this army ca willingly go berserk.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="No Berserk" id="7c86-d307-4e4e-1919" hidden="false">
-          <description>While this unit is alive, no unit in this army ca willingly go berserk.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Mle. 32 .30 Self-loading Rifle" id="7810-3703-56f7-e7f6" hidden="false" type="profile" targetId="Mle. 32 .30 Self-loading Rifle">
           <modifiers>
@@ -651,7 +651,7 @@
         <categoryLink targetId="dce2-0c88-f9f4-a415" id="dcc6-89e0-af97-2c37" primary="false" name="Lupar"/>
       </categoryLinks>
       <profiles>
-        <profile name="Bounders" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="5877-2590-a0b9-1551">
+        <profile name="Anti-Material/Sniper Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="5877-2590-a0b9-1551">
           <characteristics>
             <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
             <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
@@ -661,7 +661,7 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
           </characteristics>
         </profile>
-        <profile name="Bounders" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="089b-ef8c-277c-fdab">
+        <profile name="APX-25 1-inch Anti-Tank Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="089b-ef8c-277c-fdab">
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
@@ -669,6 +669,11 @@
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">4/6</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Scoped</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bounders" typeId="Abilities" typeName="Abilities" hidden="false" id="ad6a-4d41-b436-ccdc">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">idk</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -700,6 +705,11 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
           </characteristics>
         </profile>
+        <profile name="Denmother" typeId="Abilities" typeName="Abilities" hidden="false" id="5833-99bc-69c8-3684">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm base. Infantry cannot desant. Embarked infantry may fire all weapons as if they were Small Arms and are identified along with the vehicle.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Personnel Carrier" id="5369-ccd1-9552-b6b8" hidden="false" type="rule" targetId="Personnel Carrier">
@@ -708,11 +718,6 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Denmother" id="d243-c209-2fa4-17a3" hidden="false" noindex="true">
-          <description>This unit uses a 40x40mm base. Infantry cannot desant. Embarked infantry may fire all weapons as if they were Small Arms and are identified along with the vehicle.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="5"/>
       </costs>
@@ -1154,6 +1159,11 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
           </characteristics>
         </profile>
+        <profile name="Lugus" typeId="Abilities" typeName="Abilities" hidden="false" id="4eb5-ba6d-c2d6-f59c">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm base. Infantry cannot desant.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="➤ TAP 20 3-inch Recoilless Rifle - Canister" id="8336-4131-31f1-ba1a" hidden="false" type="profile" targetId="TAP 20 3-inch Recoilless Rifle - Canister">
@@ -1177,11 +1187,6 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Lugus" id="27b0-ad1e-0d46-1a3f" hidden="false" noindex="true">
-          <description>This unit uses a 40x40mm base. Infantry cannot desant.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
       </costs>
@@ -1304,6 +1309,11 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
           </characteristics>
         </profile>
+        <profile name="Chariots" typeId="Abilities" typeName="Abilities" hidden="false" id="767f-af01-d6ee-26bb">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm base and can be depleted as if it were an infantry squad. When landed, unit class counts as Inf (S); it may fire all weapons and enter close combat as if it were infantry. May land in forests and inside of buildings as a squad-sized garrison.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Mle. 38 .30 LMG" id="bea1-1ee2-7edb-348b" hidden="false" type="profile" targetId="Mle. 38 .30 LMG">
@@ -1317,11 +1327,6 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Chariots" id="d51a-9c03-6134-4e75" hidden="false">
-          <description>This unit uses a 40x40mm base and can be depleted as if it were an infantry squad. When landed, unit class counts as Inf (S); it may fire all weapons and enter close combat as if it were infantry. May land in forests and inside of buildings as a squad-sized garrison.</description>
-        </rule>
-      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="AES514 &quot;Backbone&quot;" hidden="false" id="0959-e079-3bc2-5557">
       <costs>
@@ -1343,6 +1348,11 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
           </characteristics>
         </profile>
+        <profile name="Backbone" typeId="Abilities" typeName="Abilities" hidden="false" id="9f05-7c9d-23c3-2897">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">Embarked infantry can fire all weapons at stationary accuracy.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Chaff-Flares" id="ed52-30e8-1627-983b" hidden="false" type="rule" targetId="Chaff-Flares"/>
@@ -1357,11 +1367,6 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Backbone" id="1af2-76ce-0df7-65fb" hidden="false">
-          <description>Embarked infantry can fire all weapons at stationary accuracy.</description>
-        </rule>
-      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="AES805 &quot;Tornado&quot;" hidden="false" id="52a9-6d4a-f9a1-29c7">
       <categoryLinks>
@@ -1413,7 +1418,7 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="R-2 &quot;Chien de Chasse" hidden="false" id="d40f-8326-5715-7f13">
+    <selectionEntry type="unit" import="true" name="R-2 &quot;Chien de Chasse&quot;" hidden="false" id="d40f-8326-5715-7f13">
       <costs>
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
       </costs>
@@ -1428,6 +1433,11 @@
             <characteristic name="M" typeId="e85a-c562-a781-84ab">10&quot;</characteristic>
             <characteristic name="Q" typeId="0103-c752-ce78-b142">2</characteristic>
             <characteristic name="T" typeId="7ba2-0bd2-bda2-c5fa">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chien de Chasse" typeId="Abilities" typeName="Abilities" hidden="false" id="5ebb-9273-e25e-bce9">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">Does not break designation when it moves. Designation is broken when the target leaves the aircraft’s frontal arc. </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1446,11 +1456,6 @@
           </modifierGroups>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Chien de Chasse" id="9fd3-f776-725f-2c3a" hidden="false">
-          <description>Does not break designation when it moves. Designation is broken when the target leaves the aircraft’s frontal arc. ______________________</description>
-        </rule>
-      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="AD-48 &quot;Falconet&quot;" hidden="false" id="0cf6-9384-a004-8a29">
       <costs>
@@ -1816,4 +1821,7 @@ This unit may deploy up to 16” inches away from deployment edge into occludin
 This unit soothes friendly Lupar within X number of inches from itself. Units which enter this radius automatically lose their berserk tokens, if berserk, and units inside of the radius cannot gain them. A unit that loses its berserk token this way does not become satiated. Units within the radius never have to roll to go berserk for any reason</description>
     </rule>
   </sharedRules>
+  <sharedInfoGroups>
+    <infoGroup name="Pins" id="3252-a098-368f-b3eb" hidden="false"/>
+  </sharedInfoGroups>
 </catalogue>

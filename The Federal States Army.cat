@@ -1,2 +1,682 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6e9d-0d8f-14de-85f5" name="The Federal States Army" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="6e9d-0d8f-14de-85f5" name="The Federal States Army" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Type 68C &quot;Appomattox&quot;" hidden="false" id="d69d-ed9f-3b55-406c">
+      <profiles>
+        <profile name="Command Post Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="2d5d-d46c-ef17-1c7e">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">6/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1M1V Target Bearing Transmitter" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="1511-8029-9129-ef8e">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Designator, Discreet</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pequod SA 11.5mm, commander’s issue" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="027c-966a-3a98-5ec9">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">2&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">5+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="7d38-9964-d37d-c742" primary="true" name="TACOM"/>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="a36f-80a1-9d1e-6ab5" primary="false" name="Vehicle"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="f87e-8b9a-3f95-9409" primary="false" name="Federal"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="NBC" id="1823-72a0-1318-e92b" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Amphibious" id="3fb2-f8f4-5907-1b3f" hidden="false" type="rule" targetId="Amphibious"/>
+        <infoLink name="Brigade" id="2898-3a99-36e2-30dd" hidden="false" type="rule" targetId="Brigade">
+          <modifiers>
+            <modifier type="append" value="(3, 12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Smoke Launchers" id="4798-621e-478d-9ea8" hidden="false" type="profile" targetId="Smoke Launchers"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Expeditionary Command" hidden="false" id="8c12-092e-7f3d-2635">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="dc8b-1fde-432e-db21" primary="true" name="TACOM"/>
+        <categoryLink targetId="1348-366f-efec-ce89" id="def4-5a0a-459d-543b" primary="false" name="Infantry"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="0029-9807-c1d7-0e4d" primary="false" name="Federal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Paratrooper Command Squad" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ae31-afe8-c53e-7723">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Expeditionary Command" typeId="Abilities" typeName="Abilities" hidden="false" id="ba99-fa84-17e8-2c80">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">All units targeted in Brigade (including self) lose all pin tokens.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="e48b-dd8c-08f9-1310" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="Paradrop" id="dea4-6c31-4b95-47d1" hidden="false" type="rule" targetId="Paradrop"/>
+        <infoLink name="Brigade" id="9e50-38c1-6408-515a" hidden="false" type="rule" targetId="Brigade"/>
+        <infoLink name="Assault Dismount" id="9c04-fb8a-a39c-6fdf" hidden="false" type="rule" targetId="Assault Dismount"/>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="cc32-ad29-9245-3ce8" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="6G1A 7.76mm Automatic Rifle" field="name"/>
+                <modifier type="set" value="4+/4+" field="d665-cce3-dfb4-664b"/>
+                <modifier type="set" value="2" field="3dff-e6a1-8ebe-a4ec"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink name="6L3 40mm HEDP Grenade Launcher" id="5df2-afb9-7a4d-340b" hidden="false" type="profile" targetId="6L3 40mm HEDP Grenade Launcher"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reservists" hidden="false" id="e23f-36a7-72a8-2439">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="0ed5-8dba-0d84-9e95" primary="true" name="Infantry"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="b8bf-9af6-f7c3-5baf" primary="false" name="Federal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Militia Squad" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="751e-3f08-d9ca-56e4">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">1</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1-/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="6L4 73mm RPG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="826f-785c-b837-a4c2">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">5+/6+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6/1</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Shaped Charge, Small Arm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="6P3 11.5mm SMG" id="6b4e-1419-7dd3-d475" hidden="false" type="profile" targetId="6P3 11.5mm SMG"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="States-Grenadiers" hidden="false" id="5a06-bc2c-f844-eba6" subType="mount">
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="162a-1758-c226-5e8b" primary="true" name="Infantry"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="6fb4-739b-03aa-7d35" primary="false" name="Federal"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Line Squad" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="8196-ab6f-1c6c-a38d">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="6L1 85mm RPG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="ce66-f1c4-8308-8f0b">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Shaped Charge, Small Arm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="60bf-b893-e214-dc89" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle"/>
+        <infoLink name="6G2 7.76mm GPMG" id="d2e3-df43-3ce7-401d" hidden="false" type="profile" targetId="6G2 7.76mm GPMG"/>
+        <infoLink name="Assault Dismount" id="aa02-c6ff-aea2-9356" hidden="false" type="rule" targetId="Assault Dismount"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Federal Expeditionaries" hidden="false" id="c407-b4b2-12bd-217d">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="47b3-3a88-ed1e-1e03" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Federal" hidden="false" id="3764-7ad7-a156-a260" targetId="4367-2398-f892-59ac" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Paratrooper Squad" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="8462-4ce5-2c96-99fb">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="4266-4c01-4af0-42b2" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="Paradrop" id="4de8-d8e6-326e-6ec6" hidden="false" type="rule" targetId="Paradrop"/>
+        <infoLink name="Assault Dismount" id="29ae-cf98-1405-c9c2" hidden="false" type="rule" targetId="Assault Dismount"/>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="0a2c-820d-1515-4e38" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="6G1A 7.76mm Automatic Rifle" field="name"/>
+                <modifier type="set" value="4+/4+" field="d665-cce3-dfb4-664b"/>
+                <modifier type="set" value="2" field="3dff-e6a1-8ebe-a4ec"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink name="6L3 40mm HEDP Grenade Launcher" id="16ee-505f-24ef-0062" hidden="false" type="profile" targetId="6L3 40mm HEDP Grenade Launcher"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mortar Team" hidden="false" id="2f1e-a81f-6947-c290" subType="mount">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="b40c-67e9-7396-1679" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Federal" hidden="false" id="2b74-9b4e-4695-05cf" targetId="4367-2398-f892-59ac" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Anti-Personnel Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="389f-d420-d614-3f21">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1-/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ 6L2 60mm Knee Mortar - Frag" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0ee5-3dc1-e4ac-e49b">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Light Indirect, No CC, Air-Filling</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ 6L2 60mm Knee Mortar - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="efe4-761a-a096-4cfa">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Light Indirect, No CC, Smoke (3&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="e094-d8e1-cd8f-ae25" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle"/>
+        <infoLink name="Assault Dismount" id="fa56-242a-ea5f-2267" hidden="false" type="rule" targetId="Assault Dismount"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="ATGM Team" hidden="false" id="e1c8-e751-7cfc-b7b9">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="f77c-2814-4abd-a9c5" primary="true" name="Infantry"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="9ac9-f913-7fbc-9383" primary="false" name="Federal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Anti-Tank Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ffb3-ae48-bc65-2d40">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1-/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault Dismount" id="b9aa-b6e2-5bcf-c44c" hidden="false" type="rule" targetId="Assault Dismount"/>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="2912-4747-2511-3c0a" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle"/>
+        <infoLink name="9GR1 125mm ATGM" id="da42-75df-7084-60bb" hidden="false" type="profile" targetId="9GR1 125mm ATGM"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Manpads Team" hidden="false" id="4b4a-4998-5810-cc5f">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="c421-07cf-ca2e-4d6b" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Federal" hidden="false" id="eae7-70d7-ec1d-7127" targetId="4367-2398-f892-59ac" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Anti-Air Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="3686-bfd5-e40e-7a3c">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1-/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="9GR2 85mm MANPADS" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6447-8311-2f6d-09d2">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/5</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Air-Filling, Guided Missile (2), Homing, Small Arm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault Dismount" id="6d90-e351-dba7-1a11" hidden="false" type="rule" targetId="Assault Dismount"/>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="a9df-dc04-3c7d-af36" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Recoilless Rifle Team" hidden="false" id="06f5-e639-6eb0-3cc1">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="8ac2-b3fd-8337-e114" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Federal" hidden="false" id="09e5-f915-96df-c871" targetId="4367-2398-f892-59ac" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="General-Purpose Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="f46d-3534-8671-eee1">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1-/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ 6L5 73mm Recoilless Rifle - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="5320-bafe-dc6a-79e8">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf), Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ 6L5 73mm Recoilless Rifle - Incendiary" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="3baf-ce43-bafb-9e0e">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf), Ignore Cover (2), Rear Attack</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ 6L5 73mm Recoilless Rifle - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="adc0-4b17-85d6-f360">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf), Smoke (4&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault Dismount" id="783e-e719-5014-975b" hidden="false" type="rule" targetId="Assault Dismount"/>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="fcb9-4a98-fc20-4476" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Expeditionary R.R. Team" hidden="false" id="d810-ceb3-d71a-8e4b">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="ae00-0bd4-3dfd-5d1e" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Federal" hidden="false" id="ecf0-8a9b-7e60-5ef6" targetId="4367-2398-f892-59ac" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Paratrooper G.P. Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="48e2-8ead-a6d6-184e">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ 6L6 57mm Light Recoilless Rifle - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="8dff-9242-e035-8808">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6/1</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Small Arm, Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ 6L6 57mm Light Recoilless Rifle - Canister" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="dbd6-f629-3ee7-4597">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Small Arm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="c628-782d-7f82-5c9c" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="Paradrop" id="05d5-17a5-c4ee-2c9e" hidden="false" type="rule" targetId="Paradrop"/>
+        <infoLink name="Assault Dismount" id="a52a-3631-c461-cc23" hidden="false" type="rule" targetId="Assault Dismount"/>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="512c-340b-b174-a559" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="6G1A 7.76mm Automatic Rifle" field="name"/>
+                <modifier type="set" value="4+/4+" field="d665-cce3-dfb4-664b"/>
+                <modifier type="set" value="2" field="3dff-e6a1-8ebe-a4ec"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pup Carson Scouts" hidden="false" id="fb3c-64b5-974b-6342">
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="1bed-c2aa-3e95-9cfe" primary="true" name="Infantry"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="0915-0460-5a72-7a6b" primary="false" name="Federal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pathfinder Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="a16b-e984-c8ee-57f0">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Pup Carson Scouts" typeId="Abilities" typeName="Abilities" hidden="false" id="1292-d349-99f1-742a">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">Any vehicle which this unit embarks in or desants on can move at least 6” in accessible terrain regardless of movement multipliers if it has enough inches of movement left.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Teeth and Claws" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="d71f-8755-7199-2111">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sense" id="d999-81e5-f98c-dacb" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="6G1 7.76mm Battle Rifle" id="9e53-a969-0b50-804f" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle">
+          <modifiers>
+            <modifier type="set" value="5+/5+" field="d665-cce3-dfb4-664b"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Intermarine Rangers" hidden="false" id="b1f9-027c-c05b-8c57">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="b140-42eb-149c-f830" primary="true" name="Infantry"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="46c0-0246-7587-9cee" primary="false" name="Federal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Scout-Sniper Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="c0bc-b391-bbfb-917d">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1-/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="1A5P MVSO Acquisition Laser" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0dbc-8c8d-d90a-f9eb">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Designator, Discreet</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6G5 7.76mm Sniper Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="075c-07b0-7a9e-9781">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">2+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Discreet, No CC, Scoped, Small Arm, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="8671-16c7-999a-ed70" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="Assault Dismount" id="84b1-33ff-2387-0469" hidden="false" type="rule" targetId="Assault Dismount"/>
+        <infoLink name="6P3 11.5mm SMG" id="3c95-c38e-9af6-c472" hidden="false" type="profile" targetId="6P3 11.5mm SMG">
+          <modifiers>
+            <modifier type="set" value="3+/3+" field="d665-cce3-dfb4-664b"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Type 60 &quot;Grumble&quot;" hidden="false" id="4727-65da-094d-67d5">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="3bf7-2ee9-5b9f-2aa2" primary="true" name="Vehicle"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="ba86-bb9c-3d9c-feb8" primary="false" name="Federal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Armored Personnel Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="c644-df81-3882-91af">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Amphibious" id="8911-27b3-7449-d21c" hidden="false" type="rule" targetId="Amphibious"/>
+        <infoLink name="Personnel Carrier" id="7e34-6334-fd20-71f8" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(3, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="c813-b597-9235-47d3" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="6G2 7.76mm MG" id="e621-b586-997a-57ac" hidden="false" type="profile" targetId="6G2 7.76mm MG"/>
+        <infoLink name="2K15 40mm HE Grenade Launcher" id="44bf-4705-787d-e3cf" hidden="false" type="profile" targetId="2K15 40mm HE Grenade Launcher">
+          <modifiers>
+            <modifier type="append" value="Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="LaF-301 &quot;Ox&quot;" hidden="false" id="dd92-aff5-3086-c6ff">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="9c03-3642-64f6-867b" primary="true" name="Vehicle"/>
+        <categoryLink targetId="4367-2398-f892-59ac" id="81c7-eb16-27fa-177f" primary="false" name="Federal"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Logistics Truck" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="9eea-c707-d693-6e1e">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Personnel Carrier" id="2744-4ab4-24b4-b362" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tow" id="7079-1b4b-fa9b-33d9" hidden="false" type="rule" targetId="Tow">
+          <modifiers>
+            <modifier type="append" value="(3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Resupply" id="468e-db2c-1fcf-9afe" hidden="false" type="rule" targetId="Resupply">
+          <modifiers>
+            <modifier type="append" value="(6)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedRules>
+    <rule name="Assault Dismount" id="Assault Dismount" hidden="false">
+      <description>*Federal regular infantry fight under armor until the last moment: disembarking into fire, supported by their carrier’s weaponry.*
+
+
+If this infantry unit is embarked or desanting on a vehicle (not aircraft), when that vehicle enters close combat in the Maneuver Phase, the infantry may immediately declare an Assault Dismount. Replace the vehicle with this unit, then move the vehicle’s frontal arc into basal contact with the infantry’s rear arc. The enemy unit that triggered the dismount then receives 3 pin tokens from the vehicle’s covering fire.
+The vehicle cannot itself be targeted by enemies in the subsequent close combat engagement, since it’s not in basal contact with any of them.
+If there are multiple units with this special rule in the same vehicle, then extra units after the first may consecutively disembark from the vehicle on the same Maneuver Phase turn, specifically to join the close combat engagement before it starts.
+If the Assault Dismount was triggered when an enemy charged the carrier, the dismounting units may use their Defensive CC weapons. If the dismount was triggered when the carrier itself charged into close combat, they may not.
+If infantry with Assault Dismount can harm an enemy, the vehicle carrying them may still charge that enemy, even if the vehicle itself could not damage the enemy in close combat.
+Infantry may not embark a vehicle and trigger Assault Dismount in the same round.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="6G1 7.76mm Battle Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6G1 7.76mm Battle Rifle">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="6L3 40mm HEDP Grenade Launcher" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6L3 40mm HEDP Grenade Launcher">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">*</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Shaped Charge, Underbarrel (6G1A)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="6P3 11.5mm SMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6P3 11.5mm SMG">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">5+/6+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1-/1</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="6G2 7.76mm GPMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6G2 7.76mm GPMG">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Defensive CC</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="9GR1 125mm ATGM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="9GR1 125mm ATGM">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12-60&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (2), MCLOS, Shaped Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="6G2 7.76mm MG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6G2 7.76mm MG">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="2K15 40mm HE Grenade Launcher" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="2K15 40mm HE Grenade Launcher">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">14&quot;</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/2+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Ignore Cover (1)</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

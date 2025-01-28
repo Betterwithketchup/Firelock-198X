@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
-    <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d"/>
+    <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9ba1-5b70-98af-4286" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="9ba1-5b70-98af-4286">
+          <repeats>
+            <repeat value="100" repeats="1" field="limit::5900-2fcc-c85e-3f3e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Infantry" id="1348-366f-efec-ce89" hidden="false"/>
     <categoryEntry name="Vehicle" id="f8a8-fe3f-6c49-17b0" hidden="false"/>
     <categoryEntry name="Aircraft" id="4ac2-0060-160c-d506" hidden="false"/>
     <categoryEntry name="Lupar" id="dce2-0c88-f9f4-a415" hidden="false"/>
     <categoryEntry name="Watercraft" id="67f2-d344-cbe3-ac27" hidden="false"/>
     <categoryEntry name="Helicopter" id="4337-935c-91cb-9180" hidden="false"/>
+    <categoryEntry name="Federal" id="4367-2398-f892-59ac" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Army Roster" hidden="false" id="default-force">
       <categoryLinks>
-        <categoryLink name="TACOM" hidden="false" id="82e6-4f2a-8aa4-487d" targetId="c2a0-f677-9d01-266d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="af42-9a24-2e67-eb71" includeChildSelections="true" percentValue="false"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink name="TACOM" hidden="false" id="82e6-4f2a-8aa4-487d" targetId="c2a0-f677-9d01-266d"/>
         <categoryLink name="Infantry" hidden="false" id="42e2-cb02-9e2e-efb0" targetId="1348-366f-efec-ce89"/>
         <categoryLink name="Vehicle" hidden="false" id="29f3-a517-e2c6-99e8" targetId="f8a8-fe3f-6c49-17b0"/>
         <categoryLink name="Aircraft" hidden="false" id="1460-3627-5179-6b76" targetId="4ac2-0060-160c-d506"/>
-        <categoryLink name="Watercraft" hidden="false" id="bc85-1419-9614-50ec" targetId="67f2-d344-cbe3-ac27" type="category"/>
-        <categoryLink name="Helicopter" hidden="false" id="7091-3917-d39c-d475" targetId="4337-935c-91cb-9180" type="category"/>
+        <categoryLink name="Watercraft" hidden="false" id="bc85-1419-9614-50ec" targetId="67f2-d344-cbe3-ac27"/>
+        <categoryLink name="Helicopter" hidden="false" id="7091-3917-d39c-d475" targetId="4337-935c-91cb-9180"/>
       </categoryLinks>
+      <forceEntries>
+        <forceEntry name="Squad" id="929b-3377-907b-b6f6" hidden="true"/>
+      </forceEntries>
     </forceEntry>
   </forceEntries>
   <publications>
     <publication name="Github" id="9033-84e6-481e-e335" hidden="false" publisherUrl="https://github.com/Betterwithketchup/Firelock-198X"/>
   </publications>
   <costTypes>
-    <costType name="Points" id="5900-2fcc-c85e-3f3e" defaultCostLimit="-1"/>
+    <costType name="Points" id="5900-2fcc-c85e-3f3e" defaultCostLimit="100"/>
   </costTypes>
   <profileTypes>
-    <profileType name="Unit" id="01c2-7972-ee1c-9702" hidden="false">
+    <profileType name="Unit" id="01c2-7972-ee1c-9702" hidden="false" sortIndex="1">
       <characteristicTypes>
         <characteristicType name="H" id="dec7-cb61-5dcb-432e"/>
         <characteristicType name="S" id="f5a5-a413-9ea7-ce4c"/>
@@ -42,7 +53,7 @@
         <characteristicType name="C" id="0354-3bb4-515f-4663"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon" id="623b-0c41-5890-aad3" hidden="false">
+    <profileType name="Weapon" id="623b-0c41-5890-aad3" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Type" id="d8f7-fc18-15a4-bdcd"/>
         <characteristicType name="Rng" id="3b82-4c54-f4a1-41d7"/>
@@ -52,12 +63,12 @@
         <characteristicType name="Keywords" id="6179-e464-2408-8ef1"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Abilities" id="Abilities" hidden="false">
+    <profileType name="Abilities" id="Abilities" hidden="false" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="Description" id="4330-1c07-3cee-f7ed"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Unit (Aircraft)" id="bc88-9949-5b2a-9493" hidden="false">
+    <profileType name="Unit (Aircraft)" id="bc88-9949-5b2a-9493" hidden="false" sortIndex="2">
       <characteristicTypes>
         <characteristicType name="Type" id="9265-2ade-09bd-09d9"/>
         <characteristicType name="M" id="e85a-c562-a781-84ab"/>
@@ -187,7 +198,7 @@ A Guided Missile has a time-in-flight equal to X. If the weapon is fired within
     <rule name="Homing" id="Homing" hidden="false">
       <description>This missile has a fire and forget seeker. It ignores any to-hit modifiers applied during flight and always rolls to hit, even if its firer was killed or spotting was lost.</description>
     </rule>
-    <rule name="Ignores Cover" id="Ignores Cover" hidden="false">
+    <rule name="Ignore Cover" id="Ignore Cover" hidden="false">
       <description>This weapon ignores up to X points of the target’s Cover Modifier.</description>
     </rule>
     <rule name="Lingering" id="Lingering" hidden="false">
@@ -251,4 +262,7 @@ Thermal Sights does not allow spotting on a unit in Smoke for any reason other 
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup name="TEST" id="ee04-9921-7dde-aded" hidden="false"/>
+  </sharedInfoGroups>
 </gameSystem>
