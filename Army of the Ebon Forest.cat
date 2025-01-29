@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Waykeeper Judge" hidden="false" id="4111-78c5-969a-92c7">
       <categoryLinks>
@@ -593,7 +593,7 @@
               <modifiers>
                 <modifier type="set" value="3" field="3dff-e6a1-8ebe-a4ec"/>
                 <modifier type="set" value="1+/1+" field="3c88-8ccc-7c7c-d717"/>
-                <modifier type="prepend" value="Mutated" field="name"/>
+                <modifier type="set" value="Mutated Teeth &amp; Claws" field="name"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1437,7 +1437,7 @@
         </profile>
         <profile name="Chien de Chasse" typeId="Abilities" typeName="Abilities" hidden="false" id="5ebb-9273-e25e-bce9">
           <characteristics>
-            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">Does not break designation when it moves. Designation is broken when the target leaves the aircraft’s frontal arc. </characteristic>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">Does not break designation when it moves. Designation is broken when the target leaves the aircraft’s frontal arc.</characteristic>
           </characteristics>
         </profile>
       </profiles>
