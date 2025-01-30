@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6e9d-0d8f-14de-85f5" name="The Federal States Army" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6e9d-0d8f-14de-85f5" name="The Federal States Army" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Type 68C &quot;Appomattox&quot;" hidden="false" id="d69d-ed9f-3b55-406c">
       <profiles>
@@ -519,16 +519,16 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Type 60 &quot;Grumble&quot;" hidden="false" id="4727-65da-094d-67d5">
+    <selectionEntry type="model" import="true" name="Type 60MD &quot;Wave&quot;" hidden="false" id="4727-65da-094d-67d5">
       <costs>
-        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="3bf7-2ee9-5b9f-2aa2" primary="true" name="Vehicle"/>
         <categoryLink targetId="4367-2398-f892-59ac" id="ba86-bb9c-3d9c-feb8" primary="false" name="Federal"/>
       </categoryLinks>
       <profiles>
-        <profile name="Armored Personnel Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="c644-df81-3882-91af">
+        <profile name="Automatic Mortar Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="c644-df81-3882-91af">
           <characteristics>
             <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
             <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
@@ -543,7 +543,7 @@
         <infoLink name="Amphibious" id="8911-27b3-7449-d21c" hidden="false" type="rule" targetId="Amphibious"/>
         <infoLink name="Personnel Carrier" id="7e34-6334-fd20-71f8" hidden="false" type="rule" targetId="Personnel Carrier">
           <modifiers>
-            <modifier type="append" value="(3, Rear)" field="name"/>
+            <modifier type="append" value="(1, Rear)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="NBC" id="c813-b597-9235-47d3" hidden="false" type="rule" targetId="NBC"/>
@@ -552,9 +552,15 @@
             <modifier type="set" value="4+/6+" field="d665-cce3-dfb4-664b"/>
           </modifiers>
         </infoLink>
-        <infoLink name="2K15 40mm HE Grenade Launcher" id="44bf-4705-787d-e3cf" hidden="false" type="profile" targetId="2K15 40mm HE Grenade Launcher">
+        <infoLink name="➤ 2M9 82mm Automatic Mortar - Chemical SP" id="5560-4766-238f-ac5a" hidden="false" type="profile" targetId="➤ 2M9 82mm Automatic Mortar - Chemical SP"/>
+        <infoLink name="➤ 2M9 82mm Automatic Mortar - Frag" id="965f-89d4-098c-e085" hidden="false" type="profile" targetId="➤ 2M9 82mm Automatic Mortar - Frag">
           <modifiers>
-            <modifier type="append" value="Turret" field="6179-e464-2408-8ef1"/>
+            <modifier type="set" value="4+/5+" field="d665-cce3-dfb4-664b"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ 2M9 82mm Automatic Mortar - Smoke" id="a5ca-41c0-e004-c808" hidden="false" type="profile" targetId="➤ 2M9 82mm Automatic Mortar - Smoke">
+          <modifiers>
+            <modifier type="set" value="++/++" field="d665-cce3-dfb4-664b"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1005,39 +1011,12 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
           </characteristics>
         </profile>
-        <profile name="➤ 2M9 82mm Automatic Mortar - Chemical SP" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="00bf-2323-5ec6-ff70">
-          <characteristics>
-            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
-            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞”</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
-            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
-            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
-            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (3), No CC, Chemical-SP (3&quot;), Heavy Indirect (3)</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="➤ 2M9 82mm Automatic Mortar - Frag" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="3091-9826-495d-9d28">
-          <characteristics>
-            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
-            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞”</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
-            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
-            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
-            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (3), No CC, Air-Filling, Heavy Indirect (3), Radius (2”)</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="➤ 2M9 82mm Automatic Mortar - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="31fd-2dee-ab0c-088d">
-          <characteristics>
-            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
-            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞”</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
-            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
-            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
-            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (3), No CC, Heavy Indirect (1), Smoke (3&quot;)</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="6G1 7.76mm Battle Rifle" id="77c1-d4d5-13c3-0890" hidden="false" type="profile" targetId="6G1 7.76mm Battle Rifle"/>
+        <infoLink name="➤ 2M9 82mm Automatic Mortar - Smoke" id="70fe-1c5b-2283-28fb" hidden="false" type="profile" targetId="➤ 2M9 82mm Automatic Mortar - Smoke"/>
+        <infoLink name="➤ 2M9 82mm Automatic Mortar - Frag" id="235f-632c-c133-6ab0" hidden="false" type="profile" targetId="➤ 2M9 82mm Automatic Mortar - Frag"/>
+        <infoLink name="➤ 2M9 82mm Automatic Mortar - Chemical SP" id="a9a5-6ff9-7e76-ad96" hidden="false" type="profile" targetId="➤ 2M9 82mm Automatic Mortar - Chemical SP"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="2K52 &quot;Wheat&quot;" hidden="false" id="7b50-14bb-319c-29cc">
@@ -1160,10 +1139,63 @@
             <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
           </characteristics>
         </profile>
+        <profile name="2A37 37mm Rotary Cannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="2ac5-52b5-cf09-6388">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">36&quot;</characteristic>
+            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/7</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Radar Anti-Air, Tracking, Turret</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Amphibious" id="31e8-ec91-ddaf-aa91" hidden="false" type="rule" targetId="Amphibious"/>
         <infoLink name="NBC" id="73ae-3c48-0e4f-ea5e" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Type 60 &quot;Grumble&quot;" hidden="false" id="86b3-fff8-16f8-c70e">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="22cc-5e05-ac09-5c93" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Federal" hidden="false" id="d1ef-9c14-7a2c-ed1c" targetId="4367-2398-f892-59ac" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Armored Personnel Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="1bd5-588e-6616-3541">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Amphibious" id="7826-7bca-4ff6-f257" hidden="false" type="rule" targetId="Amphibious"/>
+        <infoLink name="Personnel Carrier" id="f0e9-586c-e10c-18d3" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(3, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="3947-334f-1859-f15b" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="6G2 7.76mm MG" id="866c-6949-0a57-b7b8" hidden="false" type="profile" targetId="6G2 7.76mm MG">
+          <modifiers>
+            <modifier type="set" value="4+/6+" field="d665-cce3-dfb4-664b"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="2K15 40mm HE Grenade Launcher" id="9d8f-99dc-e1b7-ad07" hidden="false" type="profile" targetId="2K15 40mm HE Grenade Launcher">
+          <modifiers>
+            <modifier type="append" value="Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
   </selectionEntries>
@@ -1290,6 +1322,36 @@ This weapon has Chemical Weapon but rolls a 4+ to kill against lupar during Upk
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/4</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ 2M9 82mm Automatic Mortar - Chemical SP" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="➤ 2M9 82mm Automatic Mortar - Chemical SP">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞”</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (3), No CC, Chemical-SP (3&quot;), Heavy Indirect (3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ 2M9 82mm Automatic Mortar - Frag" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="➤ 2M9 82mm Automatic Mortar - Frag">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞”</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (3), No CC, Air-Filling, Heavy Indirect (3), Radius (2”)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ 2M9 82mm Automatic Mortar - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="➤ 2M9 82mm Automatic Mortar - Smoke">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞”</characteristic>
+        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (3), No CC, Heavy Indirect (1), Smoke (3&quot;)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
