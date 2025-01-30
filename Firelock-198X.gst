@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9ba1-5b70-98af-4286" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="fa2e-000b-2aeb-fb47" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
         <modifier type="increment" value="1" field="9ba1-5b70-98af-4286">
+          <repeats>
+            <repeat value="100" repeats="1" field="limit::5900-2fcc-c85e-3f3e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="fa2e-000b-2aeb-fb47">
           <repeats>
             <repeat value="100" repeats="1" field="limit::5900-2fcc-c85e-3f3e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
