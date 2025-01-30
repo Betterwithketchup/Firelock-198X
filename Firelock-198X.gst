@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d">
       <constraints>
@@ -20,6 +20,10 @@
     <categoryEntry name="Watercraft" id="67f2-d344-cbe3-ac27" hidden="false"/>
     <categoryEntry name="Helicopter" id="4337-935c-91cb-9180" hidden="false"/>
     <categoryEntry name="Federal" id="4367-2398-f892-59ac" hidden="false"/>
+    <categoryEntry name="Charlie" id="Charlie" hidden="false"/>
+    <categoryEntry name="Beta" id="Beta" hidden="false"/>
+    <categoryEntry name="Delta" id="Delta" hidden="false"/>
+    <categoryEntry name="Alpha" id="Alpha" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Army Roster" hidden="false" id="default-force">
@@ -30,6 +34,10 @@
         <categoryLink name="Aircraft" hidden="false" id="1460-3627-5179-6b76" targetId="4ac2-0060-160c-d506"/>
         <categoryLink name="Watercraft" hidden="false" id="bc85-1419-9614-50ec" targetId="67f2-d344-cbe3-ac27"/>
         <categoryLink name="Helicopter" hidden="false" id="7091-3917-d39c-d475" targetId="4337-935c-91cb-9180"/>
+        <categoryLink name="Alpha" hidden="false" id="a0c3-ae9f-3629-92bd" targetId="Alpha"/>
+        <categoryLink name="Charlie" hidden="false" id="19ee-81f7-632a-beb9" targetId="Charlie"/>
+        <categoryLink name="Beta" hidden="false" id="4d38-e4f4-1e6c-2ab4" targetId="Beta"/>
+        <categoryLink name="Delta" hidden="false" id="2b63-cb2d-ae7b-7cfb" targetId="Delta"/>
       </categoryLinks>
       <forceEntries>
         <forceEntry name="Squad" id="929b-3377-907b-b6f6" hidden="true"/>
@@ -262,7 +270,46 @@ Thermal Sights does not allow spotting on a unit in Smoke for any reason other 
       </characteristics>
     </profile>
   </sharedProfiles>
-  <sharedInfoGroups>
-    <infoGroup name="TEST" id="ee04-9921-7dde-aded" hidden="false"/>
-  </sharedInfoGroups>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Squad" id="Squad" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Alpha" hidden="false" id="176a-fae3-d0a4-82b8" sortIndex="1">
+          <categoryLinks>
+            <categoryLink targetId="Alpha" id="454d-d2a6-3b9c-c729" primary="false" name="Alpha"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set-primary" value="Alpha" field="category" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Beta" hidden="false" id="a6bc-23cd-dd53-fc8c" sortIndex="2">
+          <categoryLinks>
+            <categoryLink targetId="Beta" id="b8f9-8ae8-6c4b-43db" primary="false" name="Beta"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set-primary" value="Beta" field="category" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Charlie" hidden="false" id="eeb7-a567-592f-3df2" sortIndex="3">
+          <categoryLinks>
+            <categoryLink targetId="Charlie" id="0cbc-602a-afdc-07d7" primary="false" name="Charlie"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set-primary" value="Charlie" field="category" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Delta" hidden="false" id="a71a-ff30-89ff-a7fa" sortIndex="4">
+          <categoryLinks>
+            <categoryLink targetId="Delta" id="9084-e9cc-7528-1b05" primary="false" name="Delta"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set-primary" value="Delta" field="category" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd12-c497-9746-e1e4"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f169-95f6-4950-3f4c"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </gameSystem>
