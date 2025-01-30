@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d">
       <constraints>
@@ -71,7 +71,7 @@
       <characteristicTypes>
         <characteristicType name="Type" id="d8f7-fc18-15a4-bdcd"/>
         <characteristicType name="Rng" id="3b82-4c54-f4a1-41d7"/>
-        <characteristicType name="Atk" id="d665-cce3-dfb4-664b"/>
+        <characteristicType name="Acc" id="d665-cce3-dfb4-664b"/>
         <characteristicType name="Str" id="3c88-8ccc-7c7c-d717"/>
         <characteristicType name="Dice" id="3dff-e6a1-8ebe-a4ec"/>
         <characteristicType name="Keywords" id="6179-e464-2408-8ef1"/>
@@ -269,7 +269,7 @@ Thermal Sights does not allow spotting on a unit in Smoke for any reason other 
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Light Indirect, No CC, Smoke (4&quot;)</characteristic>

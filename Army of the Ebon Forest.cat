@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Waykeeper Judge" hidden="false" id="4111-78c5-969a-92c7">
       <categoryLinks>
@@ -259,7 +259,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
@@ -269,7 +269,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">9/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Ammo 3, Shaped Charge</characteristic>
@@ -279,7 +279,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/12</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Ammo 3</characteristic>
@@ -289,7 +289,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/5+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Ammo 3, Ignore Cover (2), Rear Attack</characteristic>
@@ -299,7 +299,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
@@ -397,7 +397,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Air-Filling, Light Indirect, No CC, Radius (2”), Ammo 4</characteristic>
@@ -407,7 +407,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Shaped Charge, Ammo 4</characteristic>
@@ -417,7 +417,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Light Indirect, No CC, Smoke (3&quot;), Ammo 4</characteristic>
@@ -427,7 +427,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D3</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Light Indirect, No CC, Radius (3”), Rally (Salt), Ammo 4</characteristic>
@@ -665,7 +665,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">4/6</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Scoped</characteristic>
@@ -857,7 +857,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/12</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, No CC (Inf.), Turret</characteristic>
@@ -867,7 +867,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/3</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, No CC (Inf.), Turret, Ignore Cover (1)</characteristic>
@@ -877,7 +877,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Ignore Cover (2), Multi-Gun, Rear Attack</characteristic>
@@ -916,7 +916,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/12</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2, Point), Thermal Sights, Turret, No CC (Inf.)</characteristic>
@@ -926,7 +926,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2, Point), Thermal Sights, Turret, No CC (Inf.), Shaped Charge</characteristic>
@@ -936,7 +936,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2, Point), Thermal Sights, Turret, Defensive CC (Inf.)</characteristic>
@@ -969,7 +969,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">10/15</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC, Thermal Sights</characteristic>
@@ -979,7 +979,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/3</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC, Thermal Sights, Ignore Cover (1)</characteristic>
@@ -1063,7 +1063,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">12/18</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.)</characteristic>
@@ -1099,7 +1099,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">D6</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC, Air-Filling, Heavy Indirect (4), Radius (3”)</characteristic>
@@ -1109,7 +1109,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">16/3</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC, Shaped Charge</characteristic>
@@ -1119,7 +1119,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">6</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC</characteristic>
@@ -1129,7 +1129,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC, Heavy Indirect (2), Smoke (5”)</characteristic>
@@ -1214,7 +1214,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">36&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/7</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, No CC (Inf.), Radar Anti-Air, Tracking, Turret</characteristic>
@@ -1245,7 +1245,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12-∞”</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6/6</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Air-filling, Ignore Cover (1), Heavy Indirect (3), No CC, Saturating (6)</characteristic>
@@ -1478,7 +1478,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">4&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1"/>
@@ -1488,7 +1488,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6/1</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">4</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Barrage (2), Shaped Charge</characteristic>
@@ -1498,7 +1498,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">2+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Air-Filling, Rear Attack, Saturating (4)</characteristic>
@@ -1530,7 +1530,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3</characteristic>
@@ -1540,7 +1540,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (1), Homing</characteristic>
@@ -1550,7 +1550,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Air-Filling, Guided Missile (2), Radius (3&quot;), Rear Attack</characteristic>
@@ -1575,7 +1575,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">6</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (1), Homing</characteristic>
@@ -1585,7 +1585,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3</characteristic>
@@ -1603,7 +1603,7 @@
           <characteristics>
             <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
             <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
-            <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+</characteristic>
             <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8</characteristic>
             <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
             <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Barrage (2, Point), Guided Missile (1), No CC</characteristic>
@@ -1617,7 +1617,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">10&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
@@ -1627,7 +1627,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
@@ -1637,7 +1637,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
@@ -1647,7 +1647,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Shaped Charge, Small Arm</characteristic>
@@ -1657,7 +1657,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1"/>
@@ -1667,7 +1667,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Light Indirect, Radius (3&quot;), Rally (Salt)</characteristic>
@@ -1677,7 +1677,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
@@ -1687,7 +1687,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">12/12</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">D1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Melee</characteristic>
@@ -1697,7 +1697,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
@@ -1707,7 +1707,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Self</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Discreet, Rally (Salt)</characteristic>
@@ -1717,7 +1717,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
@@ -1727,7 +1727,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/xx</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Designator</characteristic>
@@ -1737,7 +1737,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Shaped Charge</characteristic>
@@ -1747,7 +1747,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Defensive CC (Inf.)</characteristic>
@@ -1757,7 +1757,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Smoke (4&quot;)</characteristic>
@@ -1767,7 +1767,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6-60&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Guided Missile (2), Shaped Charge</characteristic>
@@ -1777,7 +1777,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Guided Missile (2), Shaped Charge</characteristic>
@@ -1787,7 +1787,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">4/6</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">No CC (Inf.), Turret</characteristic>
@@ -1797,7 +1797,7 @@
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
-        <characteristic name="Atk" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Turret</characteristic>
