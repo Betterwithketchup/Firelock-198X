@@ -6,3 +6,7 @@ Firelock 198X
 [![Open bugs](https://img.shields.io/github/issues/Betterwithketchup/Firelock-198X/bug.svg?style=flat-square&label=bugs)](https://github.com/Betterwithketchup/Firelock-198X/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
 [![Contributors](https://img.shields.io/github/contributors/Betterwithketchup/Firelock-198X.svg?style=flat-square)](https://github.com/Betterwithketchup/Firelock-198X/graphs/contributors)
 [![Commit activity the past month](https://img.shields.io/github/commit-activity/y/Betterwithketchup/Firelock-198X.svg?style=flat-square)](https://github.com/Betterwithketchup/Firelock-198X/pulse/weekly)
+
+
+https://firelock-team.itch.io/firelock-198x-09-public
+https://drekfortmdc.neocities.org
