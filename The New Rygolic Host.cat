@@ -1,2 +1,385 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="33ec-98fb-62bd-c558" name="The New Rygolic Host" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="33ec-98fb-62bd-c558" name="The New Rygolic Host" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="4" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Drone" id="Drone" hidden="false">
+      <description>*Rygo support vehicles are often remotely operated. With the pilot’s head undisturbed in a distant bunker, its body is free to operate the vehicle under fire without compromise.*
+
+
+This unit’s quality is marked Q*, indicating that it is unaffected by pin. This unit never receives pin tokens. Drone units can never lend or receive actions through the Rygonet.</description>
+    </rule>
+    <rule name="Laser" id="Laser" hidden="false">
+      <description>*Federal science has yet to fully understand Rygo directed energy weapons. Given enough time, a well-placed laser can crack any hull.*
+
+
+This weapon always rolls a minimum of 6+ to kill regardless of the enemy’s Toughness. Against non-air units, even if it hits, it can never deal more than one pin in a single attack. Like Designators, Lasers are blocked by Smoke. Lasers are always considered to have Tracking. Lasers which trigger Chaff-Flares are immediately nullified and do not reroll, but still apply three pin.</description>
+    </rule>
+    <rule name="Strider" id="Strider" hidden="false">
+      <description>*Biological legs grant Rygolic light armor units exceptional all-terrain mobility and the ability to exploit low cover by crouching.*
+
+
+This vehicle is considered infantry for movement purposes: it can sprint, rotate freely and ignores terrain vehicle multipliers. It cannot garrison structures, but can move over them provided it does not end its movement within them. It may also go to ground, but instead of receiving a cover modifier, its Height is reduced by 1 when doing so.</description>
+    </rule>
+    <rule name="Rygonet" id="Rygonet" hidden="false">
+      <description>*Rygo constructs receive their marching orders from Rygonet, itself running off a small sliver of each man’s brainpower. This distributed intelligence permits Rygo troops to rapidly and efficiently coordinate operations.*
+
+
+Any friendly, non-Drone Rygo unit within the listed radius of this unit is eligible to lend its action to any other Rygo unit in that same radius during the Fire and Maneuver Phases. A Rygo unit can take a maximum of three actions during a phase. When a unit lends its action, it is considered to have used its turn and is ineligible to act on its own or lend another action for the rest of the phase. It can, however, still receive bonus actions from other units. 
+Rygonet can be used during a Brigade activation to transfer moves from units which have not been targeted as part of the Brigade to units that have been targeted.
+Units with no weapons cannot lend a fire action, and units with no viable movement, such as those with M0’’ or those which fired stationary the previous Fire Phase cannot lend a movement action. Units being affected by Chemical Weapon cannot lend or receive Rygonet actions. Dummies cannot lend or receive Rygonet actions.
+Units firing a Heavy Indirect Mission may be lent actions to make additional attacks at the mission target or for direct fire.</description>
+    </rule>
+    <rule name="Active Camouflage" id="d5ab-6fa5-640a-eeda" hidden="false">
+      <description>*Rygolic stealth platforms are fitted with advanced camouflage systems capable of concealing them on the visible, IR and EM spectrums.*
+
+
+This unit is treated as concealed when targeted by an enemy unit more than 6’’ away. This unit loses concealment when it fires a non-Discreet weapon or is spotted by either Sense or weapons with Designator. Despite being considered concealed, units with Active Camouflage may still be targeted by Designators for this purpose. Units desanting on units with Active Camouflage also benefit from the rule.</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Node Team" hidden="false" id="0668-76fe-1536-bd2e">
+      <profiles>
+        <profile name="Transmission Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="36bc-e03c-a6f0-3c8f">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Node Team" typeId="Abilities" typeName="Abilities" hidden="false" id="26a3-afde-356f-0034">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">One Node Team comes free per 100 pts as a standard TACOM. Additional Node Teams can be purchased for 20 pts at no limit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brigade" id="80d3-a9ad-eb81-d4a8" hidden="false" type="rule" targetId="Brigade">
+          <modifiers>
+            <modifier type="append" value="(2, 12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Elite" id="d8ac-cca9-4cc6-839a" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="Rygonet" id="016e-6431-1917-aa80" hidden="false" type="rule" targetId="Rygonet">
+          <modifiers>
+            <modifier type="append" value="(12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="5c7d-12eb-7064-b91f" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Snake Green” 5mm Assault Rifle" id="d56b-6910-4be4-2c09" hidden="false" type="profile" targetId="“Snake Green” 5mm Assault Rifle"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - APDS" id="8262-aa82-ebd1-9402" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - APDS"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - HE Airburst" id="f94d-2de1-c78f-ae68" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - HE Airburst"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="a25c-7910-e10a-8a73" primary="true" name="TACOM"/>
+        <categoryLink targetId="1348-366f-efec-ce89" id="8dc1-cb11-5e44-d0ba" primary="false" name="Infantry"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="61a2-5295-35f9-26ac" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="0668-76fe-1536-bd2e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="20" field="costs"/>
+            <modifier type="remove" value="c2a0-f677-9d01-266d" field="category" scope="parent"/>
+            <modifier type="set-primary" value="1348-366f-efec-ce89" field="category" scope="parent"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ganglion" hidden="false" id="4a7d-47b6-3b45-8a18">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="07ef-3aab-2e2f-069b" primary="true" name="TACOM"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="transmission Tower" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="99f5-6242-e7e0-b2c1">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">0</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">0</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">6</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ganglion" typeId="Abilities" typeName="Abilities" hidden="false" id="84ed-1d94-8a1b-1204">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base. This unit may activate in the maneuver phase even though it has M0’’, but must do so as a Brigade action with at least one target.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Paradrop" id="a8d2-39c4-7e70-4e5d" hidden="false" type="rule" targetId="Paradrop"/>
+        <infoLink name="Brigade" id="f6a2-51d5-f39d-020a" hidden="false" type="rule" targetId="Brigade">
+          <modifiers>
+            <modifier type="append" value="(4, 12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="1ce2-c28b-ca83-fe56" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Rygonet" id="a6ca-7671-0ed6-9a12" hidden="false" type="rule" targetId="Rygonet">
+          <modifiers>
+            <modifier type="append" value="(24&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sense" id="af68-34dd-6f3b-3514" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="S3 &quot;Stoma&quot;" hidden="false" id="9471-c254-905f-fbc1">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c2a0-f677-9d01-266d" id="56c5-0300-6054-41d9" primary="true" name="TACOM"/>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="cefc-e9d0-18e9-f9f1" primary="false" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bipedal Command Vehicle" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="e68c-d312-37c6-bd42">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">6/6/5</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 &quot;Stoma&quot;" typeId="Abilities" typeName="Abilities" hidden="false" id="34f5-1ddc-5df6-23e6">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base. When this unit activates during the Fire Phase, it may select one friendly Rygolic unit that has not yet fired within 8” and LOS to activate with it and simultaneously fire at the same target. The unit which activates with it is considered to have used its turn for the round.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="“Pitch Break” 25mm Autocannon" id="ca7e-395b-7840-a868" hidden="false" type="profile" targetId="“Pitch Break” 25mm Autocannon"/>
+        <infoLink name="Brigade" id="5d4b-dfc4-4dd1-7ef0" hidden="false" type="rule" targetId="Brigade">
+          <modifiers>
+            <modifier type="append" value="(3, 8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Strider" id="b8d5-54f5-d480-a727" hidden="false" type="rule" targetId="Strider"/>
+        <infoLink name="NBC" id="00cc-3e2f-3255-a292" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Rygonet" id="d36b-afe0-b8c2-a275" hidden="false" type="rule" targetId="Rygonet">
+          <modifiers>
+            <modifier type="append" value="(8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="feaa-57c9-9ce1-44e1" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legionnaries" hidden="false" id="5bce-1234-ce7c-724d">
+      <profiles>
+        <profile name="Line Squad" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="14d2-292a-909e-a658">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="da9e-22e7-1246-1500" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="NBC" id="176e-1688-7b8e-8c12" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Snake Green” 5mm Assault Rifle" id="cf05-c846-afe5-4743" hidden="false" type="profile" targetId="“Snake Green” 5mm Assault Rifle"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - APDS" id="3ecd-610d-1230-fe7f" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - APDS">
+          <modifiers>
+            <modifier type="set" value="Ammo 4, Thermal Sights, Underbarrel (Snake Green)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ “Tread Curve” 20mm GL - HE Airburst" id="8f8b-900a-19f1-528a" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - HE Airburst">
+          <modifiers>
+            <modifier type="set" value="Ammo 4, Thermal Sights, Underbarrel (Snake Green), Ignore Cover (1)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="“Side Fast” 140mm Shouldered ATGM" id="da1d-2a8e-1927-d7ff" hidden="false" type="profile" targetId="“Side Fast” 140mm Shouldered ATGM">
+          <modifiers>
+            <modifier type="set" value="Ammo 3, Guided Missile (1), Shaped Charge, Thermal Sights" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="ed5d-69e3-2aa9-813b" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="170a-068d-864c-3f7d" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tactical Team" hidden="false" id="68fa-e09d-718e-39dc">
+      <profiles>
+        <profile name="Line Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="fa66-f065-544a-5ed0">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="75e2-cd28-951d-e250" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="NBC" id="214c-4ef9-1ee3-b1b5" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Snake Green” 5mm Assault Rifle" id="1c0b-5338-efdf-5427" hidden="false" type="profile" targetId="“Snake Green” 5mm Assault Rifle"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - APDS" id="0191-a5a5-1402-7cf7" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - APDS"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - HE Airburst" id="9795-af3c-6521-e4e8" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - HE Airburst"/>
+        <infoLink name="“Side Fast” 140mm Shouldered ATGM" id="55f4-8e5f-33b7-8c11" hidden="false" type="profile" targetId="“Side Fast” 140mm Shouldered ATGM"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="99d7-c970-2232-68e9" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="41da-81c9-9a35-a27b" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Smartgun Team" hidden="false" id="0ec5-c612-5419-eccb">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="d86d-e4f8-1bba-d415" primary="true" name="Infantry"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="4f2d-de77-88dd-5594" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Anti-Personnel Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="3c3b-869c-3cf4-e9e4">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Drift Cage” 5mm Stabilized SAW" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0492-0ddb-c76a-a005">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Scoped, Thermal Sights, Tracking, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault Specialist" id="f91f-1f5c-a132-f7e8" hidden="false" type="rule" targetId="Assault Specialist"/>
+        <infoLink name="NBC" id="0d7e-7d52-3225-d448" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Elite" id="5037-af23-deb3-295a" hidden="false" type="rule" targetId="Elite"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="MANPADS Team" hidden="false" id="b49c-6b34-3a2d-916e">
+      <profiles>
+        <profile name="Anti-Air Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="b2f4-5bbe-44ef-a49e">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Pole Guard” 70mm MANPADS" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="b40e-d7fc-ec5a-927a">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/5</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (1), Homing, Small Arm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="06c5-15e9-95a5-a97b" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="NBC" id="b020-7f6c-de2f-8fdf" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Snake Green” 5mm Assault Rifle" id="01c2-7eb7-db5a-cfcc" hidden="false" type="profile" targetId="“Snake Green” 5mm Assault Rifle"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - APDS" id="3627-d3e4-f6c5-4e90" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - APDS"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - HE Airburst" id="a330-552a-e170-33ae" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - HE Airburst"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="e1f3-e865-9211-e02e" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="26a9-c4fc-69cc-2778" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="“Snake Green” 5mm Assault Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Snake Green” 5mm Assault Rifle">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Thermal Sights</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ “Tread Curve” 20mm GL - APDS" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="➤ “Tread Curve” 20mm GL - APDS">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">*</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/4</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Thermal Sights, Underbarrel (Snake Green)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ “Tread Curve” 20mm GL - HE Airburst" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="➤ “Tread Curve” 20mm GL - HE Airburst">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">*</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Thermal Sights, Underbarrel (Snake Green), Ignore Cover (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="“Drift Bar” 5mm Coaxial MG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Drift Bar” 5mm Coaxial MG">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Thermal Sights, Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="“Pitch Break” 25mm Autocannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Pitch Break” 25mm Autocannon">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">4/6</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Thermal Sights, Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="“Side Fast” 140mm Shouldered ATGM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Side Fast” 140mm Shouldered ATGM">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6-60&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Guided Missile (1), Shaped Charge, Thermal Sights</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
