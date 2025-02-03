@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d">
       <constraints>
@@ -267,6 +267,12 @@ Thermal Sights does not allow spotting on a unit in Smoke for any reason other 
     </rule>
     <rule name="Underbarrel" id="Underbarrel" hidden="false">
       <description>This weapon is mounted under the barrel of X parent weapon. It may be fired simultaneously with that weapon at the same target. The Underbarrel weapon uses that weapon’s Accuracy and half range modifier. It benefits from Thermal Sights, Small Arm, and Scoped if those are possessed by the main weapon.</description>
+    </rule>
+    <rule name="APS" id="APS" hidden="false">
+      <description>This unit is fitted with an active protection system: essentially a big shotgun that automatically fires to destroy incoming high-caliber munitions. Once per game, APS nullifies a successful kill roll against this vehicle, even if it has ++ Strength. Nullified kills only accrue one pin, not three. APS cannot be reloaded after it nullifies a kill roll. After APS is spent, failed kills accrue three pin as normal.</description>
+    </rule>
+    <rule name="Nuclear" id="Nuclear" hidden="false">
+      <description>The final argument See APPENDIX H</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

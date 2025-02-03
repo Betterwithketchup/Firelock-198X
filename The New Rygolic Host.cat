@@ -648,6 +648,1051 @@ This unit is treated as concealed when targeted by an enemy unit more than 6’�
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="C3 &quot;Candor&quot;" hidden="false" id="5041-956d-3ee9-d64f">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="d018-ae32-601a-fa42" primary="true" name="Vehicle"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="a835-21d1-abe1-167b" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Armored Personnel Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="b647-36eb-fd0e-ccdb">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">6/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="68fa-80c5-1c3b-c3ad" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="0128-cbc4-a7cb-0d03" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+        <infoLink name="Smoke Launchers" id="e1a8-01a7-6ad6-ad21" hidden="false" type="profile" targetId="Smoke Launchers"/>
+        <infoLink name="“Sun Point” 6kW Laser Weapon" id="2f99-8262-67d8-2262" hidden="false" type="profile" targetId="“Sun Point” 6kW Laser Weapon"/>
+        <infoLink name="Personnel Carrier" id="696e-1caf-6646-3c11" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="P1 &quot;Parallax&quot;" hidden="false" id="7dfa-2837-5344-b4c8">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="8589-bebc-38fe-2700" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="4e3a-7f08-7ddf-eb46" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infantry Fighting Hovercraft" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="973c-1383-fc0f-659f">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">6/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Hovercraft" typeId="Abilities" typeName="Abilities" hidden="false" id="93a7-7608-d75f-34af">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">Does not pay terrain Entrance/Exit cost.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Amphibious" id="0132-0eed-979d-ccf1" hidden="false" type="rule" targetId="Amphibious"/>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="8428-232c-fbd1-6f21" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+        <infoLink name="Smoke Launchers" id="f7c6-dfdd-0a55-38fc" hidden="false" type="profile" targetId="Smoke Launchers"/>
+        <infoLink name="Personnel Carrier" id="2fd3-b41f-be3a-e843" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="1c0d-28c3-3d1f-1e67" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Pitch Break” 25mm Autocannon" id="d297-e3a6-c2c1-2e04" hidden="false" type="profile" targetId="“Pitch Break” 25mm Autocannon"/>
+        <infoLink name="“Side Judge” 150mm ATGM" id="cbe8-66cd-f04e-9248" hidden="false" type="profile" targetId="“Side Judge” 150mm ATGM"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="P1A &quot;Perigee&quot;" hidden="false" id="edbd-e73d-55c8-8977">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="f830-2d7d-7de6-ee69" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="b9d6-67ac-6b68-c5f3" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Air Defense Hovercraft" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="b43a-6161-83b2-0d96">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">6/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Pole Guard” 70mm MANPADS" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="9c5c-58a3-9472-079b">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/5</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Guided Missile (1), Homing</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hovercraft" typeId="Abilities" typeName="Abilities" hidden="false" id="8ed0-ab03-da0a-97ad">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">Does not pay terrain Entrance/Exit cost.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Amphibious" id="5707-16ad-8c5c-7a39" hidden="false" type="rule" targetId="Amphibious"/>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="3eb4-d7b5-c165-366e" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+        <infoLink name="Smoke Launchers" id="120d-d357-5616-d508" hidden="false" type="profile" targetId="Smoke Launchers"/>
+        <infoLink name="Personnel Carrier" id="ac27-0474-fa7d-8327" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, Rear)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="1381-1fa0-35cd-0e2f" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Pitch Break” 25mm Autocannon" id="36dc-54da-0ddd-d200" hidden="false" type="profile" targetId="“Pitch Break” 25mm Autocannon"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M1 &quot;Microwave&quot;" hidden="false" id="96ff-41c3-038e-7062">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="e373-69b7-9fd8-6afe" primary="true" name="Vehicle"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="3bd4-747b-b9b0-9908" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Unmanned Tankette" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="7ea8-c2da-7ab2-0143">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">*</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/2/2</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="M1 &quot;Microwave&quot;" typeId="Abilities" typeName="Abilities" hidden="false" id="958b-4dad-29e1-18e2">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="8ab4-c9b5-6af4-b5c3" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Drone" id="7cd2-eb21-73a3-7db7" hidden="false" type="rule" targetId="Drone"/>
+        <infoLink name="“Pitch Break” 25mm Autocannon" id="6eb4-08d2-f5e5-c9b6" hidden="false" type="profile" targetId="“Pitch Break” 25mm Autocannon"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="C1 &quot;Cabal&quot;" hidden="false" id="19d0-9bbe-8e18-18e3">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="23d2-05e6-1239-2ab8" primary="true" name="Vehicle"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="7844-3819-6575-a2a9" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Assault Gun" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="f180-05c8-7129-dea6">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">8/6/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Dart” 105mm Gun - Sabot" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="b931-162a-e309-c4db">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/21</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Thermal Sights, Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Dart” 105mm Gun - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="bc78-f25f-d3f4-c0ec">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">10/2</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Thermal Sights, Turret, Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Dart” 105mm Gun - Prox Fuse HE" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="4ca7-b1e8-9d3f-ea3c">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">4/4</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Thermal Sights, Turret, Air-filling, Tracking (Flak)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="APS" id="ed22-dfe7-0a68-a779" hidden="false" type="rule" targetId="APS"/>
+        <infoLink name="NBC" id="61f7-857f-c3a8-a45b" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="ef30-f268-4d5f-2249" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+        <infoLink name="Smoke Launchers" id="29ff-f294-20cd-6007" hidden="false" type="profile" targetId="Smoke Launchers"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="S1 &quot;Synod&quot;" hidden="false" id="f484-3378-275a-3094">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="cc92-f7c4-229f-38c1" primary="true" name="Vehicle"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="dd76-959a-4e02-974c" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Strider" id="f674-825d-03f4-8595" hidden="false" type="rule" targetId="Strider"/>
+        <infoLink name="NBC" id="5166-cc38-bdd0-b179" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Smoke Launchers" id="95ad-e309-c777-1f3a" hidden="false" type="profile" targetId="Smoke Launchers"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Synod" typeId="Abilities" typeName="Abilities" hidden="false" id="189d-e0af-4f53-d7fa">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base and can self-supply 1 Ammo as a fire action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Drift Fence” 10mm HMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="ac63-3d2d-a29e-1085">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Thermal Sights Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Spike” 75mm Low Pressure Gun - Beehive" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="d586-be32-132f-8c78">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/2+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4,Thermal Sights, Turret, Defensive CC (Inf.)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Spike” 75mm Low Pressure Gun - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="427c-7ec3-4a54-0f7a">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4,Thermal Sights, Turret, No CC (Inf.), Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Spike” 75mm Low Pressure Gun - Sabot" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0bbc-6723-ecba-1ef1">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">10/15</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4,Thermal Sights, Turret, No CC (Inf.)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bipedal Light Tank" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="9a7a-b3a3-92b8-68f2">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">12/10/8</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="X1 &quot;X-Ray&quot;" hidden="false" id="2158-cdf8-ccbe-d4bc">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="b284-2af5-2f19-88cb" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="4ae3-f321-710b-c3c0" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Main Battle Tank" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ef87-30c8-2007-1240">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">16/14/10</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Dart” 105mm Gun - Rocket Assisted Sabot" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7778-5e02-4c2e-7471">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">50&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">16/24</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Thermal Sights, Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Bridge Dart” 105mm Gun - Rocket Assisted HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="5c5b-9ae2-4456-0038">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">50&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">10/2</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Thermal Sights, Turret, Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="X1 &quot;X-Ray&quot;" typeId="Abilities" typeName="Abilities" hidden="false" id="6cf1-45a2-3f92-8af7">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit may self-supply 1 Ammo instead of firing a weapon during the Fire Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="726f-1f5b-2aa6-acbd" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Smoke Launchers" id="11b1-afca-9c24-4af0" hidden="false" type="profile" targetId="Smoke Launchers"/>
+        <infoLink name="“Sun Point” 6kW Laser Weapon" id="9f7a-7330-e43b-0d11" hidden="false" type="profile" targetId="“Sun Point” 6kW Laser Weapon">
+          <modifiers>
+            <modifier type="set" value="40&quot;" field="3b82-4c54-f4a1-41d7"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="APS" id="f17b-9627-7b7a-d265" hidden="false" type="rule" targetId="APS"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Automated Sentry" hidden="false" id="b573-cae9-7c1b-439e">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="88c0-3b93-4ce3-f299" primary="true" name="Vehicle"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="376d-50ac-2bb1-288a" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Anti-Personnel Turret" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="1bf3-b099-48fe-8034">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">0&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">*</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/2/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Automated Sentry" typeId="Abilities" typeName="Abilities" hidden="false" id="8ff9-5826-5df5-a094">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Strobe” 10mm Minigun" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="6aea-70eb-ce71-3f10">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Thermal Sights, Tracking, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Paradrop" id="0002-d240-9246-14bf" hidden="false" type="rule" targetId="Paradrop"/>
+        <infoLink name="NBC" id="d75f-c43d-2ab0-ac58" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Drone" id="5866-b3a9-b8fe-3e52" hidden="false" type="rule" targetId="Drone"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Automated ATGM" hidden="false" id="c51b-a239-9255-b73a">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="e0e4-fba6-bf91-a9a0" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="2999-4471-bdc3-4e5a" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Anti-Tank Turret" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="fb0d-676c-3811-75c5">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">0&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">*</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">2/2/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Automated ATGM" typeId="Abilities" typeName="Abilities" hidden="false" id="afb1-b9b5-7b01-acee">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Paradrop" id="0193-25cf-3ec3-7bd2" hidden="false" type="rule" targetId="Paradrop"/>
+        <infoLink name="NBC" id="f743-ad00-c0d1-96e7" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Drone" id="7a1e-f6ab-4978-1021" hidden="false" type="rule" targetId="Drone"/>
+        <infoLink name="“Side Judge” 150mm ATGM" id="8a1f-160c-66e6-695c" hidden="false" type="profile" targetId="“Side Judge” 150mm ATGM"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="X2 &quot;Xiphos&quot;" hidden="false" id="d25c-794d-f621-2bca">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="a5c1-57cf-9373-a409" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="9382-62a1-c7ff-e392" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Self-Propelled Howitzer" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="5562-51da-0d8b-2407">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">12/8/6</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Core” 155mm Guided Howitzer - LOSAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7b4f-ca3e-293d-ac73">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">21/14</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="X2 &quot;Xiphos&quot;" typeId="Abilities" typeName="Abilities" hidden="false" id="7533-36cb-4d1f-77a5">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit may self-supply 1 Ammo instead of firing a weapon during the Fire Phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Core” 155mm Guided Howitzer - Guided HE" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="d32e-6bbf-311e-7a50">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/8</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC, Thermal Sights, Heavy Indirect (2), Ignore Cover (*), Rear Attack</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Core” 155mm Guided Howitzer - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="86ff-1aa2-7756-b809">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">∞&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC, Thermal Sights, Heavy Indirect (1), Smoke (4&quot;)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&quot;Core&quot; Guided HE" typeId="Abilities" typeName="Abilities" hidden="false" id="88ee-2ed7-7cea-6166">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">*Attacks gain an Ignore Cover value equal to the number of friendly Rygo units currently spotting the target.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="5510-bef8-413e-8e33" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Smoke Launchers" id="97fc-5a74-76f8-3137" hidden="false" type="profile" targetId="Smoke Launchers"/>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="a0f5-f7b6-c050-96c9" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+        <infoLink name="APS" id="8765-13c7-941e-8e07" hidden="false" type="rule" targetId="APS"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="S2 &quot;Stochast&quot;" hidden="false" id="87f1-eaa8-7abe-d03c">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="3eaa-504c-8daf-e090" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="6fa9-4653-aeab-52cf" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Strider" id="3a1a-187c-21ce-1dba" hidden="false" type="rule" targetId="Strider"/>
+        <infoLink name="NBC" id="7c73-d201-9ed4-2228" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Stochast" typeId="Abilities" typeName="Abilities" hidden="false" id="86e8-503d-6359-b794">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base and can self-supply 1 Ammo as a fire action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Molecule” 10mm HMG" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="be83-75c7-f6a7-470f">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Thermal Sights Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bipedal Assault Tank" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ed6d-bfdd-a628-499b">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">10/8/6</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Ink Strake” 55mm Thermobaric Rockets" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="5b42-f239-9311-61ea">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">5+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/2</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Ignore Cover (2), No CC, Rear Attack, Saturating (4), Thermal Sights, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="C2 &quot;Chorus&quot;" hidden="false" id="3a8f-84fb-d026-38f5">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="5944-47cf-11c8-cfcc" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="e7c6-ddba-f7ed-402c" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Beam-Riding Missile Carrier" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="68a8-947e-b481-6a00">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">8/6/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Star Shelf” 155mm Missile Rack - ATGM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="e961-429c-da0f-662e">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12-60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">16/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Guided Missile (1), Shaped Charge, Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Star Shelf” 155mm Missile Rack - SAM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="718e-177c-6825-99a7">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">16/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Guided Missile (1), Shaped Charge, Turret, Radar Anti-Air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="bf80-6430-c0b3-c28a" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="0f39-9ffe-9ee2-8144" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+        <infoLink name="Smoke Launchers" id="09ac-301d-d26b-3abc" hidden="false" type="profile" targetId="Smoke Launchers"/>
+        <infoLink name="“Star Call” Smart Designator" id="ac81-7384-a65c-cd28" hidden="false" type="profile" targetId="“Star Call” Smart Designator"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="X3 &quot;Xenon&quot;" hidden="false" id="8ada-6324-1c85-972d">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="80"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="APS" id="210f-7d6a-89b0-f9a2" hidden="false" type="rule" targetId="APS"/>
+        <infoLink name="NBC" id="f009-2f5e-b39e-a4c6" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Drift Bar” 5mm Coaxial MG" id="948a-55cb-a25c-8f6b" hidden="false" type="profile" targetId="“Drift Bar” 5mm Coaxial MG"/>
+        <infoLink name="Smoke Launchers" id="4e6c-892f-ae2f-5755" hidden="false" type="profile" targetId="Smoke Launchers"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="6aa7-214e-22ac-c565" primary="true" name="Vehicle"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="3cbf-6e6f-e5f5-506f" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="X3 &quot;Xenon&quot;" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="9437-d4bc-ba63-f8b6">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">10&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">12/8/6</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Sun Blind” 12kW Laser Weapon Array - Dispersed" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="8d77-4935-b008-4e11">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd/Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser, No CC, Turret, Radius (3&quot;) *All units in radius take max pin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Sun Blind” 12kW Laser Weapon Array - Focused" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="0e2c-88e8-f5ff-377f">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/2</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">4</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser, No CC, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Y1 &quot;Yardfish&quot;" hidden="false" id="328d-7ea1-870f-d16f">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="67f2-d344-cbe3-ac27" id="482f-7dce-7b30-af26" primary="true" name="Watercraft"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="a579-c4cb-f4fa-4f0b" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Autonomous Torpedo" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ef57-7ecb-d5c6-06e9">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">3/3/2</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Sun Door” 6kW Laser Weapon Array" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="465a-73a1-f239-2b03">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser, Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Dredge Top” 140mm VLS Missiles" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="3abf-7a69-4b3c-1a11">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Vec/Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12-60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/8</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (2), Radar Anti-Air, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Active Camouflage" id="ffad-aed3-bca8-1dd0" hidden="false" type="rule" targetId="Active Camouflage"/>
+        <infoLink name="NBC" id="7c58-883a-75e3-06f8" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Watercraft" id="c3fd-5774-a212-a52d" hidden="false" type="rule" targetId="Watercraft"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="H1 &quot;Handler&quot;" hidden="false" id="0328-5b0b-dea2-2e61">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4337-935c-91cb-9180" id="f892-daae-7940-7ef9" primary="true" name="Helicopter"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="6f4b-ed19-8618-83bd" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Drone" id="0e3a-d332-16c5-f53d" hidden="false" type="rule" targetId="Drone"/>
+        <infoLink name="NBC" id="bd38-702f-cdf6-3eba" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Star Call” Smart Designator" id="5f1e-2b89-fcb7-45a1" hidden="false" type="profile" targetId="“Star Call” Smart Designator"/>
+        <infoLink name="Smoke Launchers" id="35df-f41f-232a-2693" hidden="false" type="profile" targetId="Smoke Launchers">
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="3b82-4c54-f4a1-41d7"/>
+            <modifier type="set" value="Ammo 2, Light Indirect, No CC, Smoke (4’’), Turret" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Reconnaissance Drone" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ed05-0eff-d492-c388">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">32&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">*</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="H2 &quot;Hangman&quot;" hidden="false" id="b78c-572e-f49c-7078">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Helicopter" hidden="false" id="cac7-1d0d-7142-6001" targetId="4337-935c-91cb-9180" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="d047-42a5-4ecb-8b98" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Drone" id="8d4b-eb0c-9db7-58b2" hidden="false" type="rule" targetId="Drone"/>
+        <infoLink name="NBC" id="7edf-3c06-b0e9-68ca" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Chaff-Flares" id="5eec-7cdd-b173-c994" hidden="false" type="rule" targetId="Chaff-Flares"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Attack Drone" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="8874-36f1-3d1b-ddd9">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">32&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">*</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Bolt Fleck” 100mm Flechette Gun" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7eba-76a7-1b35-88d6">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">5</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Weave Stalk” 70mm Dual Rocket Pod" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="93ff-d25e-85d8-7ac4">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">16&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">6+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">7/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Barrage (2), Shaped Charge, Strafing, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="R1 &quot;Redstone&quot;" hidden="false" id="33e5-4107-d13c-97b2">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4337-935c-91cb-9180" id="0f77-34ec-4519-8aa1" primary="true" name="Helicopter"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="af19-8cb3-9f76-6e51" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Logistics Rocket" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="28db-3aa4-7a9e-4d33">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">24&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">3/3/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="R1 &quot;Redstone&quot;" typeId="Abilities" typeName="Abilities" hidden="false" id="29fd-54cd-4e0d-af4d">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base. It may land in any occluding terrain. If this unit falls back from close combat, choose one enemy ground unit in the combat. That unit receives an S1+ hit to its Rear arc.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Personnel Carrier" id="0e64-9220-64fb-d4e6" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(2, All)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Resupply" id="8d4c-c8ff-60fc-b2c6" hidden="false" type="rule" targetId="Resupply">
+          <modifiers>
+            <modifier type="append" value="(3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Chaff-Flares" id="68b5-88ef-b120-87fb" hidden="false" type="rule" targetId="Chaff-Flares"/>
+        <infoLink name="NBC" id="6413-4896-e426-4ac0" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="R2 &quot;Repeater&quot;" hidden="false" id="2ced-62fc-5d3c-5782">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Helicopter" hidden="false" id="0d13-79c7-6085-b4f5" targetId="4337-935c-91cb-9180" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="a08e-913b-97f1-99b2" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Attack Rocket" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="540e-2f16-07a9-44d4">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">24&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">3/3/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="R2 &quot;Repeater&quot;" typeId="Abilities" typeName="Abilities" hidden="false" id="d321-eeb3-6987-d317">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base. It may land in any occluding terrain. If this unit falls back from close combat, choose one enemy ground unit in the combat. That unit receives an S1+ hit to its Rear arc.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Yaw Shaft” 15mm Minigun" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="f10b-eb27-841b-5365">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/4</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Door Gun (Front), Thermal Sights, Tracking</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Personnel Carrier" id="46b3-95fa-469f-039f" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(1, All)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Chaff-Flares" id="368d-74b1-4f58-bca4" hidden="false" type="rule" targetId="Chaff-Flares"/>
+        <infoLink name="NBC" id="f9aa-b584-23a0-a972" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="T1 &quot;Tatter&quot;" hidden="false" id="804c-51cf-203d-0340">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4337-935c-91cb-9180" id="035e-e610-bdd1-186e" primary="true" name="Helicopter"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="f66d-d5bc-d523-b96e" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Attack Helicopter" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ae92-9b53-986e-4f24">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">32&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">3/3/2</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Pitch Throat” 35mm Autocannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="45d5-b3c8-4abc-2e59">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/7</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Ram Crutch” 175mm Active AAM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="e028-e2d8-8115-108b">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">7/7</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Air Filling, Guided Missile (1), Homing, Radar Anti-Air</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Mark Pate” 180mm AGM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="a00f-df41-1fac-170f">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">12-60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">18/4</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Guided Missile (1), Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Chaff-Flares" id="a069-37ee-78e5-a02d" hidden="false" type="rule" targetId="Chaff-Flares"/>
+        <infoLink name="NBC" id="dc27-9176-59f2-ff5c" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Destroying Angel" hidden="false" id="c8c7-ef3b-6fe1-6f5f">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="52ce-7a23-09fb-58cf" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Unclassified Unit" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="ce8e-428a-c6e8-8b94">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">18&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Destroying Angel" typeId="Abilities" typeName="Abilities" hidden="false" id="5fc4-6daf-d66f-3e3d">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm infantry base.
+ This unit rotates at no Move cost and cannot land. When an attack successfully hits this unit, it may attempt to nullify the attack by reducing its laser battery’s Dice stat by 1 and making a 3+ roll per hit. If the laser battery’s Dice stat is already 0, it cannot attempt to nullify a hit. Nullified hits still apply 2 pin tokens. The laser battery’s Dice stat is restored to normal at the end of the Fire Phase. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Sun Grid” 20kW Pulsed Laser Battery" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="2edb-447b-c27d-b3a9">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">4</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sense" id="9ebf-ed27-2d9a-7b2c" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="NBC" id="0604-273d-e711-6f49" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="B1 &quot;Blindsight&quot;" hidden="false" id="af85-326e-8d73-df05">
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="5eba-2d8c-f8c3-74fa" primary="true" name="Aircraft"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="50"/>
+      </costs>
+      <profiles>
+        <profile name="B1 &quot;Blindsight&quot;" typeId="bc88-9949-5b2a-9493" typeName="Unit (Aircraft)" hidden="false" id="549f-85bc-f7ca-1bc7">
+          <characteristics>
+            <characteristic name="Type" typeId="9265-2ade-09bd-09d9">CAP</characteristic>
+            <characteristic name="M" typeId="e85a-c562-a781-84ab">20&quot;</characteristic>
+            <characteristic name="Q" typeId="0103-c752-ce78-b142">4</characteristic>
+            <characteristic name="T" typeId="7ba2-0bd2-bda2-c5fa">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Ram Crutch” 175mm Active AAM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="7356-71bf-8d0a-50cc">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Air</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">7</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Air Filling, Guided Missile (1), Homing, Radar Anti-Air</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Mark Pate” 180mm AGM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="c8d9-055a-56dd-b9b6">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">18/4</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Guided Missile (1), Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Sun Line” 20kW Laser Battery" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="a25a-7ee2-7ef5-b53d">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">10&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Chaff-Flares" id="1f85-3fda-cd09-c5a8" hidden="false" type="rule" targetId="Chaff-Flares"/>
+        <infoLink name="Nimble" id="b106-f772-89a5-91a4" hidden="false" type="rule" targetId="Nimble"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Z1 &quot;Zenith&quot;" hidden="false" id="3ddc-a907-2a79-609e">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="fdd9-7b38-9ed5-b74a" primary="true" name="Aircraft"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="210f-8d6d-995b-e3fc" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Nimble" id="776e-9014-3072-b91d" hidden="false" type="rule" targetId="Nimble"/>
+        <infoLink name="Active Camouflage" id="b105-c932-1b99-1d6b" hidden="false" type="rule" targetId="Active Camouflage"/>
+      </infoLinks>
+      <profiles>
+        <profile name="“Able Ivy” 20t Guided Nuclear Bomb" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="11af-214f-6f2a-6cc9">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Guided Missile (2), Nuclear (1’’, 2’’, 6’’)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="A1 &quot;Apogee&quot;" hidden="false" id="f429-6bda-6dac-a065">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4ac2-0060-160c-d506" id="1eca-7e18-1769-15e2" primary="true" name="Aircraft"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="59de-644e-efab-c0b4" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Strike Aircraft" typeId="bc88-9949-5b2a-9493" typeName="Unit (Aircraft)" hidden="false" id="c71a-6b5c-169c-6c5d">
+          <characteristics>
+            <characteristic name="Type" typeId="9265-2ade-09bd-09d9">CAS</characteristic>
+            <characteristic name="M" typeId="e85a-c562-a781-84ab">14&quot;</characteristic>
+            <characteristic name="Q" typeId="0103-c752-ce78-b142">4</characteristic>
+            <characteristic name="T" typeId="7ba2-0bd2-bda2-c5fa">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Yaw Switch” 35mm Rotary Cannon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="2b5e-ef9e-7b3a-3bb3">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">4</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Lake Brush” 275mm Guided Bom" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="8027-9ac2-05aa-5b9a">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">32&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">10</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Air Filling, Barrage (2), Guided Missile (2), Radius (3’’), Rear Attack</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Chaff-Flares" id="96fa-5e67-5a1d-0a8c" hidden="false" type="rule" targetId="Chaff-Flares"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="“Snake Green” 5mm Assault Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Snake Green” 5mm Assault Rifle">
@@ -718,6 +1763,26 @@ This unit is treated as concealed when targeted by an enemy unit more than 6’�
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser, Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="“Side Judge” 150mm ATGM" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Side Judge” 150mm ATGM">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6-60&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/xx</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, Guided Missile (2), Shaped Charge, Thermal Sights, Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="“Star Call” Smart Designator" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Star Call” Smart Designator">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec"/>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Discreet, Designator</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
