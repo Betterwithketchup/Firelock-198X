@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="33ec-98fb-62bd-c558" name="The New Rygolic Host" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="4" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="33ec-98fb-62bd-c558" name="The New Rygolic Host" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="4" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Drone" id="Drone" hidden="false">
       <description>*Rygo support vehicles are often remotely operated. With the pilot’s head undisturbed in a distant bunker, its body is free to operate the vehicle under fire without compromise.*
@@ -28,7 +28,7 @@ Rygonet can be used during a Brigade activation to transfer moves from units whi
 Units with no weapons cannot lend a fire action, and units with no viable movement, such as those with M0’’ or those which fired stationary the previous Fire Phase cannot lend a movement action. Units being affected by Chemical Weapon cannot lend or receive Rygonet actions. Dummies cannot lend or receive Rygonet actions.
 Units firing a Heavy Indirect Mission may be lent actions to make additional attacks at the mission target or for direct fire.</description>
     </rule>
-    <rule name="Active Camouflage" id="d5ab-6fa5-640a-eeda" hidden="false">
+    <rule name="Active Camouflage" id="Active Camouflage" hidden="false">
       <description>*Rygolic stealth platforms are fitted with advanced camouflage systems capable of concealing them on the visible, IR and EM spectrums.*
 
 
@@ -97,7 +97,7 @@ This unit is treated as concealed when targeted by an enemy unit more than 6’�
         <categoryLink targetId="c2a0-f677-9d01-266d" id="07ef-3aab-2e2f-069b" primary="true" name="TACOM"/>
       </categoryLinks>
       <profiles>
-        <profile name="transmission Tower" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="99f5-6242-e7e0-b2c1">
+        <profile name="Transmission Tower" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="99f5-6242-e7e0-b2c1">
           <characteristics>
             <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
             <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">0</characteristic>
@@ -319,6 +319,335 @@ This unit is treated as concealed when targeted by an enemy unit more than 6’�
         <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Guided Mortar Spiders" hidden="false" id="47d7-537b-82fa-92b3">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="53f7-6827-7975-ee1d" primary="true" name="Infantry"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="f890-1e48-230e-3c40" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Anti-Personnel/Tank Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="2def-314f-004b-bdcc">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Trace Rung” 80mm Guided Mortar" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="d772-7677-4e47-b268">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">4/4</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Ignore Cover (*), Light Indirect, No CC, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trace Rung Mortar" typeId="Abilities" typeName="Abilities" hidden="false" id="c621-b803-14eb-7a29">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">*Attacks gain an Ignore Cover value equal to the number of friendly Rygo units currently spotting the target.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="➤ “Tread Curve” 20mm GL - APDS" id="da38-e2b0-3a8b-f675" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - APDS">
+          <modifiers>
+            <modifier type="set" value="Ammo 4, Thermal Sights, Underbarrel (Snake Green)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ “Tread Curve” 20mm GL - HE Airburst" id="db6d-193a-e6c9-6a90" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - HE Airburst">
+          <modifiers>
+            <modifier type="set" value="Ammo 4, Thermal Sights, Underbarrel (Snake Green), Ignore Cover (1)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Elite" id="4b1a-0a90-ab47-28e2" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="NBC" id="2db8-e170-1660-58c7" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Snake Green” 5mm Assault Rifle" id="41d4-5a77-bd01-27c8" hidden="false" type="profile" targetId="“Snake Green” 5mm Assault Rifle"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Laser Team" hidden="false" id="3c39-97b2-4456-83ec">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="0802-2b67-4a0c-b710" primary="true" name="Infantry"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="0048-e3c5-61d6-4afc" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Laser Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="f699-44d1-2970-1054">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Sun Point” 6kW Laser Weapon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="08bc-4068-dcb4-6b9d">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/xx</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser, Small Arm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="7002-69c1-1d9a-1782" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="NBC" id="6d79-b6f9-70a3-3180" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chemical Team" hidden="false" id="3186-e176-2c3d-3172">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="0462-b6b7-5f39-36fb" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="2842-051f-172f-e0ec" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Anti-Personnel Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="659f-1946-39ec-740e">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1+/1+/1+</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Pike Jump” 18.5mm Automatic  Shotgun, Slugs" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="fb36-18b8-2c92-9e92">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">6&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/2+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chemical Team" typeId="Abilities" typeName="Abilities" hidden="false" id="18a7-5284-d81f-006c">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit ignores all the effects of Chemical Weapons.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Weave Liner&quot; 70mm Dual RPG - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="243c-fefe-6249-0d68">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">10&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">7/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2), Small Arm, Thermal Sights, Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Weave Liner&quot; 70mm Dual RPG - Thermobaric" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="e621-b5d7-0b57-373e">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">10&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">2/2</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2), Small Arm, Thermal Sights, Ignore Cover (2_, Rear Attack</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ “Weave Liner&quot; 70mm Dual RPG - Nerve Agent" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="69a5-1973-5a58-3adf">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">10&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 6, Barrage (2), Small Arm, Thermal Sights, Chemical Weapon (2&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="c19c-adf0-6b37-902d" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="NBC" id="7ea3-b58c-517b-f07b" hidden="false" type="rule" targetId="NBC"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Assassins" hidden="false" id="11ad-3c99-eabf-c072">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="a03c-9f73-60ff-bb1e" primary="true" name="Infantry"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="c9ee-d0e7-4011-b52c" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Commando Team" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="84e7-5f08-1b20-6721">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">8&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">6&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">4</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1-</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Frame Staff” 10mm SMGs" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="4a99-c35e-2857-5468">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/2+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">3</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Sphere Catch” 12mm Subsonic Pistol" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="fdf7-bd69-86ce-77f6">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">2+/2+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Discreet, Multi-Gun, Scoped, Small Arm, Thermal Sights</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="“Site Cause” Plastic Explosive" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="b8ee-d1a3-cbc5-f379">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">0&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">12/12</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Melee, Multi-Gun</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault Specialist" id="8e8e-4d52-fa6d-deaa" hidden="false" type="rule" targetId="Assault Specialist"/>
+        <infoLink name="NBC" id="7ec6-b7f1-a66e-6b6c" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Sense" id="6b22-b542-dc6b-21d5" hidden="false" type="rule" targetId="Sense">
+          <modifiers>
+            <modifier type="append" value="(8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Active Camouflage" id="4d57-38ef-49d0-fee2" hidden="false" type="rule" targetId="Active Camouflage"/>
+        <infoLink name="Elite" id="8a26-b9d4-b030-655a" hidden="false" type="rule" targetId="Elite"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Capsule Squad" hidden="false" id="1495-454e-7cb2-3009">
+      <profiles>
+        <profile name="Low Orbit Insertion Squad" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="4280-83e3-3bda-fba1">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">5&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Capsule Squad" typeId="Abilities" typeName="Abilities" hidden="false" id="ca68-1493-3e0c-c6fb">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit may declare its deployment via a Capsule Insertion support mission during the Support Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Elite" id="4f40-2cf3-79fb-0509" hidden="false" type="rule" targetId="Elite"/>
+        <infoLink name="NBC" id="2828-107d-6486-1979" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="“Snake Green” 5mm Assault Rifle" id="7a79-6ba9-ec19-6759" hidden="false" type="profile" targetId="“Snake Green” 5mm Assault Rifle"/>
+        <infoLink name="➤ “Tread Curve” 20mm GL - APDS" id="36f6-c1e1-efce-6c6b" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - APDS">
+          <modifiers>
+            <modifier type="set" value="Ammo 4, Thermal Sights, Underbarrel (Snake Green)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ “Tread Curve” 20mm GL - HE Airburst" id="1549-2591-31d8-dd34" hidden="false" type="profile" targetId="➤ “Tread Curve” 20mm GL - HE Airburst">
+          <modifiers>
+            <modifier type="set" value="Ammo 4, Thermal Sights, Underbarrel (Snake Green), Ignore Cover (1)" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="c850-b9f7-5766-4871" targetId="1348-366f-efec-ce89" primary="true"/>
+        <categoryLink name="Rygo" hidden="false" id="048f-2d49-3874-ab2b" targetId="bfeb-680f-c47d-f4dd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Simulacrum" hidden="false" id="ee53-1119-5a6a-f1d2">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="9551-af10-b3ff-452f" primary="true" name="Infantry"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="4f35-9f53-013a-d542" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Unclassified Unit" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="4f36-22e7-0df8-6004">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">4&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="Mimic" typeId="Abilities" typeName="Abilities" hidden="false" id="40f3-4357-cf0a-fd97">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">At the end of the Support Phase, if a TACOM has not called a Specific Imitation mission, this unit automatically imitates the unit class, statistics, weapons and ammo of the nearest spotted enemy ground unit that it can spot for the rest of the round. It does not imitate the enemy&apos; special rules, but always retains its own. Its base size is always 40x40mm and does not consume ammo when it fires. If it cannot spot any enemy units, it uses its own statline. It must imitate one of the enemies with which it is in basal contact when entering close combat. Opposing Simulacra in close combat immediately die. Dead Simulacra always leave corpse tokens.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Carabiner Horse" hidden="false" id="af31-4b85-36e4-eb8f">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1348-366f-efec-ce89" id="677d-832e-41d6-9dbf" primary="true" name="Infantry"/>
+        <categoryLink targetId="bfeb-680f-c47d-f4dd" id="4f3c-95d6-87e3-ff11" primary="false" name="Rygo"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Draft Animal" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="a6fa-6053-8f3d-5ad0">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">6&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">1/1/1</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="“Bronze Lead” Laser Designator" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="4e97-bb66-707a-2bb6">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">40&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Designator, Discreet</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="554e-2c78-57b3-b993" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Resupply" id="2e20-ce99-d1a8-edbc" hidden="false" type="rule" targetId="Resupply">
+          <modifiers>
+            <modifier type="append" value="(4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tow" id="6d38-1092-234e-5e56" hidden="false" type="rule" targetId="Tow">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="“Snake Green” 5mm Assault Rifle" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Snake Green” 5mm Assault Rifle">
@@ -335,7 +664,7 @@ This unit is treated as concealed when targeted by an enemy unit more than 6’�
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">*</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/4</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Thermal Sights, Underbarrel (Snake Green)</characteristic>
@@ -345,7 +674,7 @@ This unit is treated as concealed when targeted by an enemy unit more than 6’�
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
         <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">8&quot;</characteristic>
-        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">*</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">3+/4+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 2, Thermal Sights, Underbarrel (Snake Green), Ignore Cover (1)</characteristic>
@@ -379,6 +708,16 @@ This unit is treated as concealed when targeted by an enemy unit more than 6’�
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">14/2</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Guided Missile (1), Shaped Charge, Thermal Sights</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="“Sun Point” 6kW Laser Weapon" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="“Sun Point” 6kW Laser Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">60&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Laser, Turret</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
