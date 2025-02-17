@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-29a2-cb33-e21d-80a5" name="Firelock 198X" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="TACOM" id="c2a0-f677-9d01-266d">
       <constraints>
@@ -31,7 +31,7 @@
     <categoryEntry name="Delta" id="Delta" hidden="false"/>
     <categoryEntry name="Alpha" id="Alpha" hidden="false"/>
     <categoryEntry name="Rygo" id="bfeb-680f-c47d-f4dd" hidden="false"/>
-    <categoryEntry name="Santagrian" id="5c40-9df6-09ae-8bc4" hidden="false"/>
+    <categoryEntry name="Santagrine" id="5c40-9df6-09ae-8bc4" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Army Roster" hidden="false" id="default-force">
