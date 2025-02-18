@@ -787,6 +787,163 @@ If a plane with Flower of the Atom is the target of an interception, it may not 
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="CB.76 &quot;Misericorde&quot;" hidden="false" id="1909-ab4a-ba69-5c9b">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="0629-0f36-560e-8f70" primary="true" name="Vehicle"/>
+        <categoryLink targetId="5c40-9df6-09ae-8bc4" id="24d9-42e1-a9a2-f3b3" primary="false" name="Santagrine"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="NBC" id="c459-457b-4059-8ad5" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Paradrop" id="83b8-bdb3-ae8c-2826" hidden="false" type="rule" targetId="Paradrop"/>
+        <infoLink name="Tow" id="27d7-b066-4144-c47e" hidden="false" type="rule" targetId="Tow">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="MhL-42 .305 MG" id="76eb-712c-c7bf-5d46" hidden="false" type="profile" targetId="MhL-42 .305 MG"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Airborne Assault Gun" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="471a-3f86-680c-4615">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">1</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">24&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">3</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">5/4/2</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="CB.76 &quot;Misericorde&quot;" typeId="Abilities" typeName="Abilities" hidden="false" id="e1d8-b353-0171-7526">
+          <characteristics>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm base. Can desant at PC (3) and can fire its weapons while units are desanting. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Sb. 28 20-lber Mountain Gun - HESH" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="770b-88f8-b8be-72e1">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/3</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC (Inf.), Shaped Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Sb. 28 20-lber Mountain Gun - Phosphene Gas" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="64db-7259-6f1e-7cd8">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 3, No CC (Inf.), Chemical Weapon (3&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exto" hidden="false" id="9448-b165-d8ab-a5bb">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="4487-b590-305d-63d8" targetId="f8a8-fe3f-6c49-17b0" primary="true"/>
+        <categoryLink name="Santagrine" hidden="false" id="8a4e-2925-20e4-dc86" targetId="5c40-9df6-09ae-8bc4" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Logistics Crawler" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="304f-1a9b-ff19-e2b6">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">32&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">8&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/4</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="SAE 2-lber AA Gun" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="31b8-2ae5-1d3b-52a5">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">36&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">5/7</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, No CC (Inf.), Radar Anti-Air, Tracking, Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="140f-944a-f189-6c9d" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Tow" id="c233-8727-edad-92c4" hidden="false" type="rule" targetId="Tow">
+          <modifiers>
+            <modifier type="append" value="(3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Personnel Carrier" id="af06-037b-72dd-eae2" hidden="false" type="rule" targetId="Personnel Carrier">
+          <modifiers>
+            <modifier type="append" value="(6, Sides)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Resupply" id="5d76-5f0b-6906-f664" hidden="false" type="rule" targetId="Resupply">
+          <modifiers>
+            <modifier type="append" value="(4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Leviathan" id="8728-1ead-d64d-fee3" hidden="false" type="rule" targetId="Leviathan">
+          <modifiers>
+            <modifier type="append" value="(2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hexamer" hidden="false" id="6a04-fff0-ddc4-64b3">
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f8a8-fe3f-6c49-17b0" id="bffd-15e4-633d-9ebf" primary="true" name="Vehicle"/>
+        <categoryLink targetId="5c40-9df6-09ae-8bc4" id="df83-1cce-e02e-795b" primary="false" name="Santagrine"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tractor Tank" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="337a-9f39-48bf-403a">
+          <characteristics>
+            <characteristic name="H" typeId="dec7-cb61-5dcb-432e">2</characteristic>
+            <characteristic name="S" typeId="f5a5-a413-9ea7-ce4c">16&quot;</characteristic>
+            <characteristic name="M" typeId="fdf7-4209-ca56-2d78">6&quot;</characteristic>
+            <characteristic name="Q" typeId="a9ce-3831-94f2-8a32">2</characteristic>
+            <characteristic name="T" typeId="38c4-d745-a54c-15fb">4/4/3</characteristic>
+            <characteristic name="C" typeId="0354-3bb4-515f-4663"/>
+          </characteristics>
+        </profile>
+        <profile name="➤ Sb.1 1-lber Gun - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="384a-8259-0aa8-15d6">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Turret, No CC, Smoke (2’’)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="NBC" id="c4d3-e10e-c1e5-248a" hidden="false" type="rule" targetId="NBC"/>
+        <infoLink name="Tow" id="9fe1-cb81-1aed-e7fb" hidden="false" type="rule" targetId="Tow">
+          <modifiers>
+            <modifier type="append" value="(6)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="MhL-42 .305 MG" id="605e-83b0-3ce3-1eb0" hidden="false" type="profile" targetId="MhL-42 .305 MG">
+          <modifiers>
+            <modifier type="set" value="4+/5+" field="d665-cce3-dfb4-664b"/>
+            <modifier type="set" value="Multi-Gun" field="6179-e464-2408-8ef1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="➤ Sb.1 1-lber Gun - APDS" id="3931-6e0c-1726-69a8" hidden="false" type="profile" targetId="➤ Sb.1 1-lber Gun - APDS"/>
+        <infoLink name="➤ Sb.1 1-lber Gun - SAPHE" id="f07a-b38a-b565-4d8d" hidden="false" type="profile" targetId="➤ Sb.1 1-lber Gun - SAPHE"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Lerna 15-lber Rocket Pod" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Lerna 15-lber Rocket Pod">
@@ -857,6 +1014,26 @@ If a plane with Flower of the Atom is the target of an interception, it may not 
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1-/1-</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">2</characteristic>
         <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ Sb.1 1-lber Gun - APDS" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="➤ Sb.1 1-lber Gun - APDS">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">3/4</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Turret</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ Sb.1 1-lber Gun - SAPHE" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="➤ Sb.1 1-lber Gun - SAPHE">
+      <characteristics>
+        <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">20&quot;</characteristic>
+        <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
+        <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/2</characteristic>
+        <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 4, Turret, Ignore Cover (1), No CC (Inf.)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
