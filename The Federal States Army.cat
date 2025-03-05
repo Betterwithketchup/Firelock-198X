@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6e9d-0d8f-14de-85f5" name="The Federal States Army" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6e9d-0d8f-14de-85f5" name="The Federal States Army" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Type 68C &quot;Appomattox&quot;" hidden="false" id="d69d-ed9f-3b55-406c">
       <profiles>
@@ -814,7 +814,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e988-bd3b-c645-aec9" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="15" field="5900-2fcc-c85e-3f3e" scope="parent"/>
+            <modifier type="set" value="30" field="5900-2fcc-c85e-3f3e" scope="parent"/>
             <modifier type="set-primary" value="c2a0-f677-9d01-266d" field="category" scope="parent"/>
             <modifier type="set" value="4" field="0354-3bb4-515f-4663" affects="profiles.Unit" scope="parent"/>
             <modifier type="increment" value="1" field="a9ce-3831-94f2-8a32" affects="profiles.Unit" scope="parent"/>
@@ -953,7 +953,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="317a-3424-d1f4-2873" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="15" field="5900-2fcc-c85e-3f3e" scope="parent"/>
+            <modifier type="set" value="40" field="5900-2fcc-c85e-3f3e" scope="parent"/>
             <modifier type="set-primary" value="c2a0-f677-9d01-266d" field="category" scope="parent"/>
             <modifier type="set" value="4" field="0354-3bb4-515f-4663" affects="profiles.Unit" scope="parent"/>
             <modifier type="increment" value="1" field="a9ce-3831-94f2-8a32" affects="profiles.Unit" scope="parent"/>

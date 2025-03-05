@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c154-5eac-f92c-3283" name="Atom Barons of Santagria" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="4" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c154-5eac-f92c-3283" name="Atom Barons of Santagria" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="4" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Leviathan" id="Leviathan" hidden="false">
       <description>*Whether rolling or flying, this monstrosity takes incredible punishment to kill—a testament to Santagrine arrogance.*
@@ -1648,7 +1648,7 @@ If a plane with Flower of the Atom is the target of an interception, it may not 
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UNI.28-03 &quot;Man-at-Arms&quot;" hidden="false" id="6d66-3c8f-f408-6f60">
+    <selectionEntry type="unit" import="true" name="UNI.28-03 &quot;Man-at-Arms&quot;" hidden="false" id="6d66-3c8f-f408-6f60">
       <categoryLinks>
         <categoryLink targetId="4337-935c-91cb-9180" id="59ae-3e1a-905c-c2fa" primary="true" name="Helicopter"/>
         <categoryLink targetId="5c40-9df6-09ae-8bc4" id="14fe-84f0-4cc7-38f9" primary="false" name="Santagrine"/>
@@ -1698,6 +1698,9 @@ If a plane with Flower of the Atom is the target of an interception, it may not 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="50"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="UNI.28-08 &quot;Lancer&quot;" hidden="false" id="3ef4-7fa0-15f1-e979">
       <costs>
