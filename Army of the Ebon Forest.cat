@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0289-a6b1-46c0-d71f" name="Army of the Ebon Forest" gameSystemId="sys-29a2-cb33-e21d-80a5" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Waykeeper Judge" hidden="false" id="4111-78c5-969a-92c7">
       <categoryLinks>
@@ -8,7 +8,7 @@
         <categoryLink targetId="c2a0-f677-9d01-266d" id="4612-bfc6-03bc-48ff" primary="true" name="TACOM"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="25"/>
+        <cost name="Points" typeId="5900-2fcc-c85e-3f3e" value="20"/>
       </costs>
       <profiles>
         <profile name="Religious Leader" typeId="01c2-7972-ee1c-9702" typeName="Unit" hidden="false" id="14de-b7d7-e18c-215e">
@@ -23,7 +23,7 @@
         </profile>
         <profile name="Waykeeper Judge" typeId="Abilities" typeName="Abilities" hidden="false" id="f287-ad84-ee65-4304">
           <characteristics>
-            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">While this unit is alive, no unit in this army ca willingly go berserk.</characteristic>
+            <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">While this unit is alive, no unit in this army ca willingly go berserk. Only Judges may call Exhortation support missions.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -708,6 +708,16 @@
         <profile name="Denmother" typeId="Abilities" typeName="Abilities" hidden="false" id="5833-99bc-69c8-3684">
           <characteristics>
             <characteristic name="Description" typeId="4330-1c07-3cee-f7ed">This unit uses a 40x40mm base. Infantry cannot desant. Embarked infantry may fire all weapons as if they were Small Arms and are identified along with the vehicle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lenus Automatic .45, driver’s issue" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="e77b-82ed-ce9f-486b">
+          <characteristics>
+            <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">All</characteristic>
+            <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">2&quot;</characteristic>
+            <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">5+/5+</characteristic>
+            <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1+/1+</characteristic>
+            <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
+            <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Small Arm</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1670,7 +1680,7 @@
         <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
-        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Light Indirect, Radius (3&quot;), Rally (Salt)</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Ammo 1, Light Indirect, Radius (3&quot;), Rally (Salt), Small Arm</characteristic>
       </characteristics>
     </profile>
     <profile name="➤ FdcL 63 4-gauge Shotgun - Rifled Slug" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="9ea1-d5a6-f3e5-14ce">
@@ -1720,7 +1730,7 @@
         <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">1+/1+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">1/1</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
-        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee</characteristic>
+        <characteristic name="Keywords" typeId="6179-e464-2408-8ef1">Melee, Multi-Gun</characteristic>
       </characteristics>
     </profile>
     <profile name="Mle. 7 Laser Designator" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="Mle. 7 Laser Designator">
@@ -1736,7 +1746,7 @@
     <profile name="➤ TAP 20 3-inch Recoilless Rifle - HEAT" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="TAP 20 3-inch Recoilless Rifle">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Inf/Veh</characteristic>
-        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">28&quot;</characteristic>
         <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">4+/6+</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717">8/1+</characteristic>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
@@ -1756,7 +1766,7 @@
     <profile name="➤ TAP 20 3-inch Recoilless Rifle - Smoke" typeId="623b-0c41-5890-aad3" typeName="Weapon" hidden="false" id="TAP 20 3-inch Recoilless Rifle - Smoke">
       <characteristics>
         <characteristic name="Type" typeId="d8f7-fc18-15a4-bdcd">Gnd</characteristic>
-        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">24&quot;</characteristic>
+        <characteristic name="Rng" typeId="3b82-4c54-f4a1-41d7">28&quot;</characteristic>
         <characteristic name="Acc" typeId="d665-cce3-dfb4-664b">++/++</characteristic>
         <characteristic name="Str" typeId="3c88-8ccc-7c7c-d717"/>
         <characteristic name="Dice" typeId="3dff-e6a1-8ebe-a4ec">1</characteristic>
